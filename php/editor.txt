@@ -315,6 +315,7 @@ document.getElementById("namediv").style.backgroundColor = "#101010";
 document.getElementById("lightdarkbutton").innerHTML = "LIGHT MODE";        
 editor.setTheme("ace/theme/vibrant_ink");
 document.getElementById("linkscroll").style.backgroundColor = "#101010";
+
 var links = document.getElementById("linkscroll").getElementsByTagName("a");
 for(var index = 0;index < links.length;index++){
     links[index].style.color = "white";
