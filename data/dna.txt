@@ -1,0 +1,47 @@
+{
+    "html": [
+        "README.md",
+        "cardboard.html",
+        "draw.html",
+        "einstein.html",
+        "fork.html",
+        "geometron.js",
+        "greenscreen.html",
+        "hypercube.html",
+        "images.html",
+        "index.html",
+        "mutate.html",
+        "qrcode-page.html",
+        "qrcode.html",
+        "readme.html",
+        "readmeeditor.html",
+        "subfeeds.html",
+        "trashfeed.txt",
+        "trashmagic.css",
+        "trashmagic.html",
+        "trashmagic.js",
+        "trashrobot.html",
+        "typewriter.html",
+        "webdestroyer.html",
+        "webeditor.html"
+    ],
+    "data": [
+        "dna.txt",
+        "lineArrayStack.txt"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "pngsave.txt",
+        "rdelete.txt",
+        "replicator.txt",
+        "text2php.txt",
+        "uploadimage.txt"
+    ]
+}

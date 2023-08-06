@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- 
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    -->
+    <title>SUBFEEDS!</title>
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREQEREREREREQABEREREQABEBEAARERABEQERABEREBARARAQEREREQEBAREREQEREAAREQEQAAAAAAAAABEBERAAEREBERERAQEBEREREBARARAQEREQAREBEQARERAAEQEQABERERERARERERERERAAEREREREREQEREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body>
+    
+    <a href = "index.html" style = "position:absolute;left:5px;top:5px;font-size:50px;color:blue;font-family:Comic Sans MS">HOME</a>
+
+        <a href = "../" style = "position:absolute;right:5px;top:5px;font-size:50px;color:blue;font-family:Comic Sans MS">UP A LEVEL(IF NOT AT TOP ALREADY)</a>
+    <div id = "linklist">
+        <table id = "newtable">
+            <tr>
+                <td>CREATE NEW SUBFEED:</td>
+                <td><input/><a id = "dirlink"></a></td>
+            </tr>
+
+        </table>
+<h3>SUBFEEDS:</h3>
+
+        <ul id = "mainlist">
+        </ul>
+
+    </div>
+    
+<script>
+
+board = "";
+
+
+directories = [];
+var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        directories = JSON.parse(this.responseText);
+        for(var index = 0;index < directories.length;index++) {
+            if(directories[index] != "trashmagic"){
+                var newa = document.createElement("A");
+                newa.innerHTML = directories[index] + "/";
+                newa.href = directories[index] + "/";
+                var newli = document.createElement("LI");
+                newli.appendChild(newa);
+                document.getElementById("mainlist").appendChild(newli);
+            }
+        }
+    }
+};
+
+httpc2.open("GET", "dir.php?type=dir", true);
+httpc2.send();
+
+
+
+inputs = document.getElementById("newtable").getElementsByTagName("input");    
+
+inputs[0].value = "";    
+
+inputs[0].onchange = function() {
+    dir = this.value;
+    dirlink.innerHTML = "<BR>CLICK ME(1/3)!";
+//    dirlink.innerHTML = "mkdir.php?dir=" + this.value;
+    dirlink.href = "mkdir.php?dir=" + this.value;
+}
+
+inputs[0].select();
+</script>
+<style>
+body{
+    background-color:#9f8767;
+    overflow:hidden;
+}
+#linklist{
+    position:absolute;
+    background-color:black;
+    font-family:Comic Sans MS;
+    font-size:3em;
+    left:100px;
+    bottom:100px;
+    right:100px;
+    top:100px;
+    border:solid;
+    border-width:8px;
+    border-radius:40px;
+    color:#00ff00;
+    overflow:scroll;
+    padding:1em 1em 1em 1em;
+}
+input{
+    font-size:0.8em;
+    color:#ff2cb4;
+    background-color:black;
+    border-color:#00ff00;
+    font-family:Comic Sans MS;
+    
+}
+#newtable{
+    color:#00ff00;
+}
+#deleteonbutton{
+    color:red;
+    cursor:pointer;
+    border:solid;
+    border-color:red;
+    text-align:center;
+    border-radius:10px;
+    width:12em;
+    display:block;
+    margin:auto;
+}
+#linklist a{
+    color:#ff2cb4;
+}
+#header{
+    font-family:Comic Sans MS;
+    font-size:3em;
+    position:absolute;
+    overflow:scroll;
+    left:200px;
+    right:200px;
+    top:0px;
+    height:300px;
+}
+#backgroundimage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    overflow:hidden;
+    z-index:-1;
+}
+#qrcode{
+    position:absolute;
+    top:20px;
+    right:20px;
+    z-index:1;
+}
+#mainlist .button{
+    cursor:pointer;
+    color:red;
+    border:solid;
+    border-color:red;
+}
+@media only screen and (orientation: portrait) {
+}
+
+</style>
+</body>
+</html>
