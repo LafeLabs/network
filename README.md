@@ -1,4 +1,6 @@
 
+
+    
 [FOLLOW TRASH ROBOT ON MASTODON!](https://kolektiva.social/@trashrobot)
 
 [WWW.TRASHROBOT.ORG](HTTPS://WWW.TRASHROBOT.ORG/)
@@ -14,10 +16,10 @@
 REPLICATOR URL:
 
 ```
-https://raw.githubusercontent.com/LafeLabs/trashfeed/main/php/replicator.txt
+https://raw.githubusercontent.com/LafeLabs/community/main/php/replicator.txt
 ```
 
-# [TRASH MAGIC FEED!](https://github.com/lafeLabs/trashfeed)
+# [TRASH MAGIC COMMUNITY!](https://github.com/lafeLabs/community)
 
 # [WWW.SOUTHPLATTE.NET](https://www.southplatte.net)
 
@@ -37,7 +39,7 @@ sudo apt install php libapache2-mod-php -y
 cd /var/www/html
 sudo rm index.html
 sudo apt install curl
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashfeed/main/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/community/main/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
