@@ -25,6 +25,7 @@
         "readme.html",
         "readmeeditor.html",
         "resources.html",
+        "rulers.html",
         "shapes.html",
         "skeletron.html",
         "street.html",
