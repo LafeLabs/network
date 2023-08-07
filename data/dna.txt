@@ -4,6 +4,8 @@
         "board.txt",
         "cardboard.html",
         "createpage.html",
+        "darkweb.html",
+        "darkweb.txt",
         "draw.html",
         "einstein.html",
         "fork.html",
