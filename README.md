@@ -1,4 +1,6 @@
+# TRASH MAGIC NETWORK
 
+This is a network of things which, together, make up trash magic. 
 
     
 [FOLLOW TRASH ROBOT ON MASTODON!](https://kolektiva.social/@trashrobot)
@@ -16,10 +18,10 @@
 REPLICATOR URL:
 
 ```
-https://raw.githubusercontent.com/LafeLabs/community/main/php/replicator.txt
+https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt
 ```
 
-# [TRASH MAGIC COMMUNITY!](https://github.com/lafeLabs/community)
+# [TRASH MAGIC NETWORK!](https://github.com/lafeLabs/network)
 
 # [WWW.SOUTHPLATTE.NET](https://www.southplatte.net)
 
@@ -39,7 +41,7 @@ sudo apt install php libapache2-mod-php -y
 cd /var/www/html
 sudo rm index.html
 sudo apt install curl
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/community/main/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
