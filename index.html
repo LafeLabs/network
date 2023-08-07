@@ -7,18 +7,21 @@
    <title>TRASH MAGIC NETWORK</title>    
    <script src = "trashmagic.js"></script>
    <link rel="stylesheet" href="trashmagic.css">
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>    
 <div id = "mainscroll">
-    
     <a href = "webeditor.html">web code editor</a>
+
+    <div id = "qrcode"></div>
+    <h1 id = "pagename"></h1>
     
     <h1>TRASH MAGIC NETWORK</h1>
 
+    <a href = "products.html">TRASH MAGIC PRODUCTS</a>
     <a href = "people.html">NETWORKS OF PEOPLE</a>
     <a href = "watershed.html">WATERSHED NETWORK</a>
     <a href = "street.html">STREET NETWORK</a>
-    <a href = "products.html">TRASH MAGIC PRODUCTS</a>
     <a href = "resources.html">COMMUNITY RESOURCES</a>
 
     <h1>TRASH MAGIC SOCIAL MEDIA</h1>
@@ -28,9 +31,15 @@
     <a href = "trashsign.html">CARDBOARD TRASH SIGN</a>
     <a href = "typewriter.html">TYPEWRITER BOARD</a>
     <a href = "darkweb.html">TRASH MAGIC DARK WEB</a>
+    <a href = "images.html">IMAGE FEED</a>
     
 </div>
 <script>
+
+pagename = window.location.href.split("://")[1];
+pagename = pagename.replace(/index.html/g, ""); 
+
+document.getElementById("pagename").innerHTML = pagename;
 
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
@@ -39,7 +48,21 @@ for(var index = 0;index < titles.length;index++){
 
 rainbow(document.getElementsByTagName("A"));
 
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
 
+    
 </script>
 </body>
 </html>

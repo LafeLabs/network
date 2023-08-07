@@ -1,4 +1,8 @@
 [
+    "feed is ephemeral",
+    "feed is shared",
+    "post stuff about trash magic, trash and things",
+    "post stuff here",
     "<a href = \"index.html\">HOME</a>",
     "<a href = \"webeditor.html\">web code editor</a>",
     "this is the community feed, post here to spread trash magic.  post waste steram resources, post things you made, post serveces you can provide, post things you are willing to share, post links to docuemnts about making things from trash",
