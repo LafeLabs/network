@@ -1,4 +1,5 @@
 [
+    "<a href = \"index.html\">HOME</a>",
     "<a href = \"webeditor.html\">web code editor</a>",
     "this is the community feed, post here to spread trash magic.  post waste steram resources, post things you made, post serveces you can provide, post things you are willing to share, post links to docuemnts about making things from trash",
     "We will build everything from trash and what we can grow, locally, right now, and give it all away for free!",

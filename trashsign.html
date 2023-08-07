@@ -16,7 +16,7 @@
         LANGUAGE IS HOW THE MIND PARSES REALITY
 
     -->
-    <title>TRASH MAGIC TYPEWRITER PAGE!</title>
+    <title>TRASH MAGIC HYPERSIGN!</title>
 
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREQEREREREREQABEREREQABEBEAARERABEQERABEREBARARAQEREREQEBAREREQEREAAREQEQAAAAAAAAABEBERAAEREBERERAQEBEREREBARARAQEREQAREBEQARERAAEQEQABERERERARERERERERAAEREREREREQEREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
@@ -45,7 +45,7 @@ httpc2.onreadystatechange = function() {
     }
 };
 
-httpc2.open("GET", "fileloader.php?filename=typepage.txt", true);
+httpc2.open("GET", "fileloader.php?filename=board.txt", true);
 httpc2.send();
 
 
@@ -55,7 +55,7 @@ document.getElementById("board").onkeyup = function() {
         var url = "filesaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-        httpc.send("data="+encodeURIComponent(board)+"&filename=typepage.txt");//send text to filesaver.php        
+        httpc.send("data="+encodeURIComponent(board)+"&filename=board.txt");//send text to filesaver.php        
     
 }
 
@@ -63,11 +63,14 @@ document.getElementById("board").onkeyup = function() {
 </script>
 <style>
 body{
+    background-color:#9f8767;
     overflow:hidden;
 }
 #board{
     position:absolute;
-    font-family:courier;
+    font-family:Comic Sans MS;
+
+    background-color:#9f8767;
     font-size:1.5em;
     left:1%;
     bottom:1%;
