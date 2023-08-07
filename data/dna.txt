@@ -2,6 +2,7 @@
     "html": [
         "README.md",
         "aquariums.html",
+        "bo.html",
         "board.txt",
         "cardboard.html",
         "contribute.html",
