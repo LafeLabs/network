@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "a-human.html",
         "aquariums.html",
         "bo.html",
         "board.txt",
