@@ -25,6 +25,7 @@
         "hypersign.html",
         "images.html",
         "index.html",
+        "make-a-page.html",
         "mutate.html",
         "people.html",
         "phonestand.html",
