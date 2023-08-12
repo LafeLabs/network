@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Trash Robot Mutual Aid Boards!</title>
+    <title>Mutual Aid Page!</title>
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREQEREREREREQABEREREQABEBEAARERABEQERABEREBARARAQEREREQEBAREREQEREAAREQEQAAAAAAAAABEBERAAEREBERERAQEBEREREBARARAQEREQAREBEQARERAAEQEQABERERERARERERERERAAEREREREREQEREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
     <script src = "trashmagic.js"></script>
    <link rel="stylesheet" href="trashmagic.css">
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 <div id = "mainscroll">
-    
+        <div id = "qrcode"></div>
+            <h1 id = "pagename"></h1>
+
 <a href = "webeditor.html">web editor</a>
     
 <a href = "index.html">HOME</a>
 
-<H1>Trash Robot's Mutual Aid Boards!</H1>
+<H1>Trash Robot's Mutual Page!</H1>
 
 <p>
-This page hosts the mutual aid boards of Trash Robot's personal network!  What are those boards?  People can give each other rides to get around the network and connect more people on the network.  People can ask for supplies for mutual aid like food, water, sanitary supplies, tech supplies, medical supplies.  People on the network can post ads for whatever their thing is on the ad board.  The freestuff board is for people distributing free stuff, and is local to Denver or places you can get to on RTD.  A newsboard can have announcements for the community.
+This page hosts the mutual aid boards of my personal network!  
 </p>
-
 
 <h1>Community Announcements</h1>
 
@@ -33,36 +35,42 @@ This page hosts the mutual aid boards of Trash Robot's personal network!  What a
 
 <h1>Ads</h1>
 
-<p>
-    Post whatever you are selling or offering in the marketplace here, post how people can find you on the ineternet.
-</p>
 
 <textarea id = "board2" class = "board"></textarea>
 
 <h1>Rides</h1>
-<p>
-    Post on the board below if you need a ride or can offer a ride, post where you are going or where you need to go.  
-</p>
 
 <textarea id = "board3" class = "board"></textarea>
 
-
 <h1>Supplies</h1>
-<p>
-What supplies do you need and where can you pick them up? What supplies do you have?  Link up here and get supplies from suppliers to vehicle operators to the people on the ground. 
-</p>
+
 <textarea id = "board4" class = "board"></textarea>
 
 <h1>Mechanical</h1>
 
-<p>Post here looking for mechanical help or offering mechanical help</p>
-
-
 <textarea id = "board5" class = "board"></textarea>
+
+<h1>Friends' Mutual Aid Pages</h1>
+
+<a href= "rose.html">rose</a>
+<a href = "alex.html">alex</a>
+<a href = "joanna.html">joanna</a>
+<a href = "deadnettlez.html">deadnettlez</a>
+<a href = "bryce.html">bryce</a>
+
+
 
 </div>
 <script>
-//some days I can just barely stand how much I hate the people who own and operate the commercial Internet.  We will tear down their empire brick by brick server by server.
+here = window.location.href.split("://")[1];
+//here = here.replace(/\//g, "\<br\/\>"); 
+
+document.getElementById("pagename").innerHTML = here;
+
+
+
+urlArray = window.location.href.split("/");
+pageName = urlArray[urlArray.length-1].split(".html")[0];
 
 
 titles = document.getElementsByTagName("H1");
@@ -72,21 +80,11 @@ for(var index = 0;index < titles.length;index++){
 
 rainbow(document.getElementsByTagName("A"));
 
-boardPrefix = "trashboard";
-boardArray  = [
-    "news",
-    "ads",
-    "rides",
-    "supplies",
-    "mechanical",
-];
-//each board will be named boardPrefix-boardArra[index]
-
-fileName1 = boardPrefix + "-" + boardArray[0] + ".txt";
-fileName2 = boardPrefix + "-" + boardArray[1] + ".txt";
-fileName3 = boardPrefix + "-" + boardArray[2] + ".txt";
-fileName4 = boardPrefix + "-" + boardArray[3] + ".txt";
-fileName5 = boardPrefix + "-" + boardArray[4] + ".txt";
+fileName1 = pageName + "-board1.txt";
+fileName2 = pageName + "-board2.txt";
+fileName3 = pageName + "-board3.txt";
+fileName4 = pageName + "-board4.txt";
+fileName5 = pageName + "-board5.txt";
 
 board1 = "";
 
@@ -177,7 +175,7 @@ httpc5.send();
 
 
 document.getElementById("board4").onkeyup = function() {
-        board3 = this.value;
+        board4 = this.value;
         var httpc = new XMLHttpRequest();
         var url = "filesaver.php";        
         httpc.open("POST", url, true);
@@ -211,6 +209,21 @@ document.getElementById("board5").onkeyup = function() {
 }
 
 
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
 </script>
 <style>
     .board{
@@ -227,7 +240,7 @@ document.getElementById("board5").onkeyup = function() {
         margin-right:auto;
         background-color:#9f876780;
         font-family:Comic Sans MS;
-        font-size:1.5em;
+        font-size:2.5em;
     }
 </style>
 </body>
