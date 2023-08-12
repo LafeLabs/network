@@ -41,6 +41,7 @@
         "skeletron.html",
         "street.html",
         "subfeeds.html",
+        "trashboard.html",
         "trashfeed.html",
         "trashfeed.txt",
         "trashmagic.css",
