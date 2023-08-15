@@ -9,6 +9,8 @@
         "readmeeditor.html",
         "trashmagic.css",
         "trashmagic.js",
+        "trashrobot-board1.txt",
+        "trashrobot.html",
         "webdestroyer.html",
         "webeditor.html"
     ],
