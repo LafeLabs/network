@@ -1,4 +1,9 @@
 ## [index.html](index.html)
+## [FOLLOW TRASH ROBOT ON MASTODON!](https://kolektiva.social/@trashrobot)
+## [WWW.TRASHROBOT.ORG](HTTPS://WWW.TRASHROBOT.ORG/)
+## [READ THE BOOK OF TRASH FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
+## [READ GEOMETRON MAGIC FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
+## [FOLLOW TRASH ROBOT ON TIKTOK!](https://www.tiktok.com/@trash_robot)
 
 # TRASH MAGIC NETWORK
 
@@ -6,7 +11,7 @@
 2. make a new server
 3. put the server on the magic dump
 
-## 1. Make a new page
+## 1. Replicate Trash Magic Page
 
 We make pages for things which spread trash magic.  These things include people who all help to spread the network, as well as physical products we make from trash and distribute for free, and public shared spaces we use as the platform on which we build the physical network.
 
@@ -15,17 +20,11 @@ To create a new page from any given page, click on the link to "webeditor.html",
 Once you have made the page, create a hyperlink to it from some existing page.  This can be whatever the index page is from the network you are building your page in.
 
 
+## 2. Replicate Trash Magic Server
 
-    
-[FOLLOW TRASH ROBOT ON MASTODON!](https://kolektiva.social/@trashrobot)
 
-[WWW.TRASHROBOT.ORG](HTTPS://WWW.TRASHROBOT.ORG/)
 
-[READ THE BOOK OF TRASH FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
-
-[READ GEOMETRON MAGIC FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
-
-[FOLLOW TRASH ROBOT ON TIKTOK!](https://www.tiktok.com/@trash_robot)
+## 3. Replicate Magic Dump 
 
 
 
