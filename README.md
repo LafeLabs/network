@@ -4,8 +4,11 @@
 ## [READ THE BOOK OF TRASH FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
 ## [READ GEOMETRON MAGIC FREE EBOOK!](HTTPS://TRASHBOOK.TRASHROBOT.ORG/)
 ## [FOLLOW TRASH ROBOT ON TIKTOK!](https://www.tiktok.com/@trash_robot)
+## [LOCALHOST](http://localhost)
 
-# TRASH MAGIC NETWORK
+# [TRASH MAGIC NETWORK!](https://github.com/lafeLabs/network)
+
+In Trash Magic we build everything we need for a good life from trash and things we can grow and spread it using self-replicating media.
 
 1. make a new page for a person, place or thing.
 2. make a new server
@@ -17,35 +20,30 @@ We make pages for things which spread trash magic.  These things include people 
 
 To create a new page from any given page, click on the link to "webeditor.html", which is generally at the top of most Trash Magic pages.  Enter the name of the new page in the input marked "name of new file:".
 
+![screenshot of where on editor to enter the name of the file](https://raw.githubusercontent.com/LafeLabs/network/main/trashmagic/editor-screenshot-1b.png)
+
 Once you have made the page, create a hyperlink to it from some existing page.  This can be whatever the index page is from the network you are building your page in.
+
+![screenshot of where to enter the code fort the link to the new page](https://raw.githubusercontent.com/LafeLabs/network/main/trashmagic/editor-screenshot-2b.png)
+
+Once you have created the new page and linked to it, go back to the main page, click the link.
+
+
+![screenshot of the link to click to go to your new page](https://raw.githubusercontent.com/LafeLabs/network/main/trashmagic/editor-screenshot-3b.png)
+
+Post up on the board whatever your message is to the community about what you can offer and what you need.  This is a mutual aid system, ask for help and offer it, and be creative!
+
+
+![screenshot showing how to update the board](https://raw.githubusercontent.com/LafeLabs/network/main/trashmagic/editor-screenshot-4b.png)
 
 
 ## 2. Replicate Trash Magic Server
 
+Go find a laptop in the trash and install Ubuntu on it.  
 
+[Ubuntu Desktop install link](https://ubuntu.com/desktop)
 
-## 3. Replicate Magic Dump 
-
-
-
-REPLICATOR URL:
-
-```
-https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt
-```
-
-# [TRASH MAGIC NETWORK!](https://github.com/lafeLabs/network)
-
-# [WWW.SOUTHPLATTE.NET](https://www.southplatte.net)
-
-# [LOCALHOST](http://localhost)
-
-
-
-
-TO BUILD A NEW TRASH MAGIC SERVER FIND A COMPUTER FROM A WASTE STREAM, COPY OFF ANY INFORMATION ANYONE WANTS TO KEEP, WIPE THE HARD DRIVE, AND INSTALL [UBUNTU](https://ubuntu.com/desktop) OR SOME OTHER FORM OF LINUX.
-
-OPEN A TERMINAL AND COPY PASTE THE FOLLOWING!
+Open a terminal and copy/paste the following:
 
 ```
 sudo apt update
@@ -61,45 +59,28 @@ cd html
 php replicator.php
 sudo chmod -R 0777 *
 ```
-GO PUT YOUR SERVER ON LOCAL NETWORKS, FIND THE IP ADDRESS, AND POST UP LINKS TO IT FROM PUBLIC TRASH MAGIC PAGES OR FROM QR CODES!  SHARE THE MEMES! SHARE THE MEDIA! SHARE THE SONGS! SHARE THE WEB!  
 
-WE WILL BUILD A TRULY FREE NETWORK! A NETWORK WITHOUT PROPERTY! A NETWORK WITHOUT DATA! A NETWORK WITHOUT USERS! A NETWORK OF SELF-REPLICATING INFORMATION!  
-
- - [TRASH ROBOT HYPERSIGN](https://www.trashrobot.org/HYPERSIGN)
- - [SERIES OF TUBES MIX TAPE](https://www.trashrobot.org/TUBES)
- - [INTERNET OF SQUARES!](https://github.com/LafeLabs/square)
- - [INTERNET OF STICKS!](https://github.com/LafeLabs/stick)
- - [INTERNET OF TRIANGLES!](https://github.com/LafeLabs/triangle)
- - [ISTICK!](https://github.com/LafeLabs/ISTICK/)
- - [TRASH ROBOT HOME PAGE!](https://www.trashrobot.org)
-
-TO MAKE A FOLDER ON THE DESKTOP WHICH IS LINKED TO THE FOLDER WITH ALL THE HTML IN IT, USE THE ln COMMAND:
+To create a folder in the desktop which is linked to the folder with all the html in it, create a symbolic link as follows:
 
 ```
 ln -s /var/www/html/ /home/username/Desktop
 ```
-MORE FOLDERS CAN BE ADDED WITH THE SAME METHOD AS FOLLOWS, EG:
+
+Create sub-folder shortcuts as desired in a way similar to this:
 
 ```
-ln -s /var/www/html/FREEMIXTAPE/mixtape/ /home/username/Desktop
+ln -s /var/www/html/mixtape/ /home/username/Desktop
 ```
 
-### Replicate the Github using localhost
 
- - install PHP on your machine
- - create a new github repository on a CC0 PUBLIC DOMAIN license and clone it on your machine
- - copy the file [php/replicator.txt](php/replicator.txt) into a file called replicator.php in the new repo directory
- - run `php replicator.php` on your machine, wait for all the code to copy
- - push all that code up to your github repo
- - in the same directory, type `sudo php -S localhost:80`
- - go to [http://localhost](http://localhost) and you should get back to this screen, edit all elements of the system
- - use [editor.php](editor.php) to edit the file php/replicator.txt so that the two urls are the global url for *your* repo for both dna and replicator
- - after you've edited the code, click [text2php.php](text2php.php) to convert that to php
- - push your code to your github repo
- - use the new replicator code on your github repo to replicate out that instance to all other servers(linux, windows, mac, android) and forks
- - when you figure this out, make youtube videos showing other people how to copy the whole system, tell someone about those videos so that we can all link to them
+The Trash Magic server is now ready to share media over local networks by sharing links to the IP address of that machine on that network.  Put no personal or private data on the machine ever!  This system represents an unenclosed digital commons of which the network of trash magicians are the caretakers.  
 
-### TRASH MAGIC DUMP replication
+You can use these machines to access servers over local networks, access servers over the Magic Dump, or share media on local networks.  Let us make millions and millions of these free servers!  Let us scale up the digital commons!  Let us use this system to spread a mutual aid network which we can all live on comfortably!
+
+
+
+## 3. Replicate Magic Dump 
+
 
 A TRASH MAGIC DUMP is an Internet connection controlled by a TRASH MAGIC OPERATOR, which can be set up to host multiple TRASH SERVERS and [RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web/recursiveweb) instances.  
 
@@ -236,4 +217,19 @@ sudo systemctl reload apache2
 
 Then when it's all set up, enable https with lets encrypt by way of nginx proxy manager.
 
+
+### Replicate the Github using localhost
+
+ - install PHP on your machine
+ - create a new github repository on a CC0 PUBLIC DOMAIN license and clone it on your machine
+ - copy the file [php/replicator.txt](php/replicator.txt) into a file called replicator.php in the new repo directory
+ - run `php replicator.php` on your machine, wait for all the code to copy
+ - push all that code up to your github repo
+ - in the same directory, type `sudo php -S localhost:80`
+ - go to [http://localhost](http://localhost) and you should get back to this screen, edit all elements of the system
+ - use [editor.php](editor.php) to edit the file php/replicator.txt so that the two urls are the global url for *your* repo for both dna and replicator
+ - after you've edited the code, click [text2php.php](text2php.php) to convert that to php
+ - push your code to your github repo
+ - use the new replicator code on your github repo to replicate out that instance to all other servers(linux, windows, mac, android) and forks
+ - when you figure this out, make youtube videos showing other people how to copy the whole system, tell someone about those videos so that we can all link to them
 
