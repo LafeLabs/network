@@ -33,15 +33,18 @@
     <div id = "linklist">
         <table id = "newtable">
             <tr>
-                <td>ENTER NAME OF NEW PAGE:</td>
+                <td>ENTER NAME OF NEW FORK:</td>
                 <td><input/><a id = "dirlink"></a></td>
             </tr>
-
+            <tr id = "replicatorline">
+                <td>external replicator url</td>
+                <td><input/></td>
+            </tr>
         </table>
 
         <ul id = "mainlist">
         </ul>
-        <div id = "deleteonbutton">BECOME THE DESTROYER!</div>
+        <div id = "deleteonbutton" style = "display:none">BECOME THE DESTROYER!</div>
 
     </div>
     
@@ -50,7 +53,7 @@
 
     <a style = "position:absolute;left:0px;top:0px;z-index:2;" href = "../fork.html"><canvas id  = "uplinkicon"></canvas></a>
     
-    <a style = "position:absolute;right:0px;bottom:0px;z-index:2;" href = "https://github.com/LafeLabs/HYPERSIGN"><canvas id  = "githubicon"></canvas></a>
+    <a style = "position:absolute;right:0px;bottom:0px;z-index:2;" href = "https://github.com/LafeLabs/network"><canvas id  = "githubicon"></canvas></a>
     
 
     
@@ -160,6 +163,7 @@ httpc2.send();
 inputs = document.getElementById("newtable").getElementsByTagName("input");    
 
 inputs[0].value = "";    
+inputs[1].value = "";
 
 inputs[0].onchange = function() {
     dir = this.value;
@@ -169,7 +173,12 @@ inputs[0].onchange = function() {
 }
 
 
-
+inputs[1].onchange = function(){
+    dir = inputs[0].value;
+    dirlink.innerHTML = "mkdir.php?dir=" + dir + "&replicator=" + this.value; 
+    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + this.value;
+    
+}
 
 
 

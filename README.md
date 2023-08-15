@@ -1,6 +1,20 @@
+## [index.html](index.html)
+
 # TRASH MAGIC NETWORK
 
-This is a network of things which, together, make up trash magic. 
+1. make a new page for a person, place or thing.
+2. make a new server
+3. put the server on the magic dump
+
+## 1. Make a new page
+
+We make pages for things which spread trash magic.  These things include people who all help to spread the network, as well as physical products we make from trash and distribute for free, and public shared spaces we use as the platform on which we build the physical network.
+
+To create a new page from any given page, click on the link to "webeditor.html", which is generally at the top of most Trash Magic pages.  Enter the name of the new page in the input marked "name of new file:".
+
+Once you have made the page, create a hyperlink to it from some existing page.  This can be whatever the index page is from the network you are building your page in.
+
+
 
     
 [FOLLOW TRASH ROBOT ON MASTODON!](https://kolektiva.social/@trashrobot)

@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/community/main/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -15,7 +15,7 @@ mkdir("data");
 mkdir("php");
 mkdir("trashmagic");
 
-copy("https://raw.githubusercontent.com/LafeLabs/community/main/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     

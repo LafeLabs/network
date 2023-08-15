@@ -69,11 +69,11 @@ function GVM(canvas2d,width,height) {
     this.unicodemap = [
         {
             "ascii":"s",
-            "character":"下"
+            "character":"ä¸‹"
         },
         {
             "ascii":"a",
-            "character":"上"
+            "character":"ä¸Š"
         }
         ];
     this.cpy1 = this.y0;
