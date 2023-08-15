@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mutual Aid Page!</title>
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREQEREREREREQABEREREQABEBEAARERABEQERABEREBARARAQEREREQEBAREREQEREAAREQEQAAAAAAAAABEBERAAEREBERERAQEBEREREBARARAQEREQAREBEQARERAAEQEQABERERERARERERERERAAEREREREREQEREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div id = "mainscroll">
+        <div id = "qrcode"></div>
+            <h1 id = "pagename"></h1>
+
+<a href = "webeditor.html">web editor</a>
+    
+<a href = "index.html">HOME</a>
+
+<H1>Trash Robot's Mutual Page!</H1>
+
+<p>
+This page hosts the mutual aid boards of my personal network!  
+</p>
+
+<h1>Community Announcements</h1>
+
+<p>This is for community announcements.</p>
+
+<textarea id = "board1" class = "board"></textarea>
+
+
+<h1>Ads</h1>
+
+
+<textarea id = "board2" class = "board"></textarea>
+
+<h1>Rides</h1>
+
+<textarea id = "board3" class = "board"></textarea>
+
+<h1>Supplies</h1>
+
+<textarea id = "board4" class = "board"></textarea>
+
+<h1>Mechanical</h1>
+
+<textarea id = "board5" class = "board"></textarea>
+
+<h1>Friends' Mutual Aid Pages</h1>
+
+<a href= "rose.html">rose</a>
+<a href = "alex.html">alex</a>
+<a href = "joanna.html">joanna</a>
+<a href = "deadnettlez.html">deadnettlez</a>
+<a href = "bryce.html">bryce</a>
+
+
+
+</div>
+<script>
+here = window.location.href.split("://")[1];
+//here = here.replace(/\//g, "\<br\/\>"); 
+
+document.getElementById("pagename").innerHTML = here;
+
+
+
+urlArray = window.location.href.split("/");
+pageName = urlArray[urlArray.length-1].split(".html")[0];
+
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+rainbow(document.getElementsByTagName("A"));
+
+fileName1 = pageName + "-board1.txt";
+fileName2 = pageName + "-board2.txt";
+fileName3 = pageName + "-board3.txt";
+fileName4 = pageName + "-board4.txt";
+fileName5 = pageName + "-board5.txt";
+
+board1 = "";
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board1 = this.responseText;
+        document.getElementById("board1").value = board1;
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=" + fileName1, true);
+httpc2.send();
+
+
+document.getElementById("board1").onkeyup = function() {
+    
+        board1 = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(board1)+"&filename=" + fileName1);//send text to filesaver.php        
+    
+}
+
+board2 = "";
+
+var httpc3 = new XMLHttpRequest();
+httpc3.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board2 = this.responseText;
+        document.getElementById("board2").value = board2;
+    }
+};
+
+httpc3.open("GET", "fileloader.php?filename=" + fileName2, true);
+httpc3.send();
+
+
+document.getElementById("board2").onkeyup = function() {
+        board2 = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(board2)+"&filename=" + fileName2);//send text to filesaver.php        
+    
+}
+
+
+board3 = "";
+
+var httpc4 = new XMLHttpRequest();
+httpc4.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board3 = this.responseText;
+        document.getElementById("board3").value = board3;
+    }
+};
+
+httpc4.open("GET", "fileloader.php?filename=" + fileName3, true);
+httpc4.send();
+
+
+document.getElementById("board3").onkeyup = function() {
+        board3 = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(board3)+"&filename=" + fileName3);//send text to filesaver.php        
+    
+}
+
+board4 = "";
+
+var httpc5 = new XMLHttpRequest();
+httpc5.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board4 = this.responseText;
+        document.getElementById("board4").value = board4;
+    }
+};
+
+httpc5.open("GET", "fileloader.php?filename=" + fileName4, true);
+httpc5.send();
+
+
+document.getElementById("board4").onkeyup = function() {
+        board4 = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(board4)+"&filename=" + fileName4);//send text to filesaver.php        
+    
+}
+
+board5 = "";
+
+var httpc6 = new XMLHttpRequest();
+httpc6.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board5 = this.responseText;
+        document.getElementById("board5").value = board5;
+    }
+};
+
+httpc6.open("GET", "fileloader.php?filename=" + fileName5, true);
+httpc6.send();
+
+
+document.getElementById("board5").onkeyup = function() {
+        board5 = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(board5)+"&filename=" + fileName5);//send text to filesaver.php        
+    
+}
+
+
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
+</script>
+<style>
+    .board{
+        width:80%;
+        height:20em;
+        display:block;
+        border:solid;
+        border-width: 8px;
+        border-radius: 10px;
+        padding: 1em 1em 1em 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#9f876780;
+        font-family:Comic Sans MS;
+        font-size:2.5em;
+    }
+</style>
+</body>
+</html>
