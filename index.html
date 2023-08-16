@@ -47,10 +47,10 @@ Trash magic is self-replicating media made of trash which forms an unenclosed di
 </div>
 <script>
 
-pagename = window.location.href.split("://")[1];
-pagename = pagename.replace(/index.html/g, ""); 
+url = window.location.href.split("://")[1];
+url = url.replace(/index.html/g, ""); 
 
-document.getElementById("pagename").innerHTML = pagename;
+document.getElementById("pagename").innerHTML = url;
 
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
@@ -78,6 +78,9 @@ qrcode = new QRCode(document.getElementById("qrcode"), {
 urlArray = window.location.href.split("/");
 pageName = urlArray[urlArray.length-1].split(".html")[0];
 
+if(pageName.length == 0){
+    pageName = "index";
+}
 fileName1 = pageName + "-board1.txt";
 //fileName1 = "sloanslake-board.txt"    
 board1 = "";
