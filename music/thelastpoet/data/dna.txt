@@ -1,7 +1,7 @@
 {
     "html": [
         "README.md",
-        "copy.sh",
+        "copythelastpoet.sh",
         "fork.html",
         "geometron.js",
         "index.html",
