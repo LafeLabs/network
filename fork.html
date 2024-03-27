@@ -37,7 +37,7 @@
                 <td><input/><a id = "dirlink"></a></td>
             </tr>
             <tr id = "replicatorline">
-                <td>external replicator url</td>
+                <td>external replicator url(optional)</td>
                 <td><input/></td>
             </tr>
         </table>
@@ -53,7 +53,7 @@
 
     <a style = "position:absolute;left:0px;top:0px;z-index:2;" href = "../fork.html"><canvas id  = "uplinkicon"></canvas></a>
     
-    <a style = "position:absolute;right:0px;bottom:0px;z-index:2;" href = "https://github.com/LafeLabs/network"><canvas id  = "githubicon"></canvas></a>
+    <a style = "position:absolute;right:0px;bottom:0px;z-index:2;" href = "https://github.com/LafeLabs/ontology"><canvas id  = "githubicon"></canvas></a>
     
 
     
@@ -140,7 +140,7 @@ var httpc2 = new XMLHttpRequest();
     if (this.readyState == 4 && this.status == 200) {
         directories = JSON.parse(this.responseText);
         for(var index = 0;index < directories.length;index++) {
-            if(directories[index] != "trashmagic"){
+            if(directories[index] != "images"){
                 var newa = document.createElement("A");
                 newa.innerHTML = directories[index] + "/";
                 newa.href = directories[index] + "/";

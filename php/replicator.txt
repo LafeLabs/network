@@ -1,11 +1,10 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/cart/main/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
 }
-
 
 $baseurl = explode("data/",$dnaurl)[0];
 $dnaraw = file_get_contents($dnaurl);
@@ -13,9 +12,9 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-mkdir("trashmagic");
 
-copy("https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/cart/main/php/replicator.txt","replicator.php");
+
 
 foreach($dna->html as $value){
     
@@ -39,9 +38,13 @@ foreach($dna->php as $value){
 
 }
     
+foreach($dna->scrolls as $value){
     
+    copy($baseurl."scrolls/".$value,"scrolls/".$value);
 
-
+}
+    
+    
 ?>
 <a href = "index.html">CLICK TO GO TO NEW PAGE</a>
 <style>

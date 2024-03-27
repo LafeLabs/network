@@ -3,15 +3,10 @@
         "README.md",
         "fork.html",
         "geometron.js",
-        "index-board1.txt",
         "index.html",
         "readme.html",
         "readmeeditor.html",
-        "trashmagic.css",
-        "trashmagic.js",
-        "trashrobot-board1.txt",
-        "trashrobot.html",
-        "webdestroyer.html",
+        "switches.html",
         "webeditor.html"
     ],
     "data": [
@@ -26,10 +21,8 @@
         "fileloader.txt",
         "filesaver.txt",
         "mkdir.txt",
-        "pngsave.txt",
         "rdelete.txt",
         "replicator.txt",
-        "text2php.txt",
-        "uploadimage.txt"
+        "text2php.txt"
     ]
 }

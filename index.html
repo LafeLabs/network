@@ -1,135 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <!--
-Trash magic is self-replicating media made of trash which forms an unenclosed digital commons outside of the system of private property.
-   -->
-   <!--Stop Google:-->
-   <META NAME="robots" CONTENT="noindex,nofollow">
-   <title>TRASH MAGIC NETWORK</title>    
-   <script src = "trashmagic.js"></script>
-   <link rel="stylesheet" href="trashmagic.css">
-   <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <meta charset="utf-8">
+
+    <!--
+
+github.com/lafelabs/cart/README.md
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACe8wAAnHMAAO7vAAD//wAA+D8AAPu/AADauwAAirEAANq7AAD7vwAA8B8AAPx/AADv7wAAnvMAAJxzAAD+/wAA" rel="icon" type="image/x-icon">
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
+
+<!--       un comment to use math
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+                }
+            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        </script>
+    -->
+
+    
 </head>
 <body>    
-<div id = "mainscroll">
-    <a href = "webeditor.html">Web Code Editor</a>
-    
-    <a href = "index.html">Home</a>
-    
-    <a href = "readme.html">Trash Magic Replicator</a>
+<div id = "scrollscroll"></div>
+<a id = "editlink" href= "readmeeditor.html">EDIT</a>
 
-    <div id = "qrcode"></div>
-    
-    <h1 id = "pagename"></h1>
-    
-    <h1>TRASH MAGIC NETWORK</h1>
-    
+<a id = "homelink" href= "index.html">HOME</a>
 
-<p>In Trash Magic we build everything we need for a good life from trash and things we can grow and spread it using self-replicating media.</p>
-
-<p>
-    This page is hosted on a Trash Magic server on the Magic Dump. The Magic Dump is an unenclosed digital commons. It is digital infrastructure which exists outside of the system of private property and which is created entirely from waste streams of old computers made obsolete by the tech companies.
-</p>
-
-<p>
-    This is a mutual aid network.  We all say what we can use help with from the network and also how we might be able to help the network, and then manually find each other and help out. We are the algorithm here, there are no apps, no users, no data.  Just public boards we all post on and read and respond to.  Find the others.
-</p>
-    
-    <textarea id = "board1" class = "board"></textarea>
-
-<h1>Links</h1>
-    
-    <a href = "trashrobot.html">Trash Robot Home Page</a>
-
-    
-</div>
 <script>
 
 
-url = window.location.href.split("://")[1];
-url = url.replace(/index.html/g, ""); 
+scroll = "";
+rawhtml = "";
+var converter = new showdown.Converter();
+// for more on options see here:
+// https://github.com/showdownjs/showdown/wiki/Showdown-Options
+converter.setOption('literalMidWordUnderscores', 'true');
+converter.setOption('tables', 'true')
+    
+filename = "README.md";
+loadscroll("README.md");
 
 
-document.getElementById("pagename").innerHTML = url;
+function loadscroll(scrollname){
+    filename = scrollname;
 
-titles = document.getElementsByTagName("H1");
-for(var index = 0;index < titles.length;index++){
-    rainbowstring(titles[index]);    
+    document.getElementById("scrollscroll").innerHTML = "";
+    document.getElementById("scrollscroll").style.display = "block";
+    var httpc666 = new XMLHttpRequest();
+    httpc666.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            scroll = this.responseText;
+            rawhtml = converter.makeHtml(scroll);
+            document.getElementById("scrollscroll").innerHTML = rawhtml;
+
+            //			MathJax.Hub.Typeset();//tell Mathjax to update the math
+    //			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        }
+    };
+    httpc666.open("GET", "fileloader.php?filename=" + scrollname, true);
+    httpc666.send();
+    //MathJax.Hub.Typeset();//tell Mathjax to update the math
 }
 
-rainbow(document.getElementsByTagName("A"));
-googleyeyes(8);
-
-
-codesquaresize = 170;
-marginsize = 40;
-fontsize = 12;
-//globalurl = "http://www.trashrobot.org/qrcode.html";
-globalurl = window.location.href;
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
-
-urlArray = window.location.href.split("/");
-pageName = urlArray[urlArray.length-1].split(".html")[0];
-
-if(pageName.length == 0){
-    pageName = "index";
-}
-fileName1 = pageName + "-board1.txt";
-//fileName1 = "sloanslake-board.txt"    
-board1 = "";
-
-var httpc2 = new XMLHttpRequest();
-httpc2.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        board1 = this.responseText;
-        document.getElementById("board1").value = board1;
-    }
-};
-
-httpc2.open("GET", "fileloader.php?filename=" + fileName1, true);
-httpc2.send();
-
-
-document.getElementById("board1").onkeyup = function() {
-    
-        board1 = this.value;
-        var httpc = new XMLHttpRequest();
-        var url = "filesaver.php";        
-        httpc.open("POST", url, true);
-        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-        httpc.send("data="+encodeURIComponent(board1)+"&filename=" + fileName1);//send text to filesaver.php        
-    
-} 
 
 </script>
 <style>
-.board{
-    width:80%;
-    height:12em;
+body{
+    overflow:hidden;
+/*        background-color:#9f8767;*/
+    background-color:white;
+    font-family:Arial;
+}
+a{
+    color:blue;
+}
+#scrollscroll{
+    padding-left:1em;
+    padding-right:1em;
+    left:0px;
+    bottom:0px;
+    position:absolute;
+    overflow:scroll;
+    font-size:2em;
+    display:none;
+    z-index:-3;
+}
+pre{
+    overflow:scroll;
+}
+#scrollscroll img{
+    max-width:50%;
     display:block;
-    border:solid;
-    border-width: 8px;
-    border-radius: 10px;
-    padding: 1em 1em 1em 1em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left:auto;
-    margin-right:auto;
-    background-color:#9f8767f0;
-    font-family:Comic Sans MS;
-    font-size:1.5em;
+    margin:auto;
+    background-color:none;
+}
+h1,h2,h3,h4{
+    text-align:center;
+}
+
+#editlink{
+    position:absolute;
+    right:0px;
+    top:0px;
+    font-size:2em;
+}
+#homelink{
+    position:absolute;
+    right:0px;
+    top:4em;
+    font-size:2em;
+}
+
+@media only screen and (orientation: landscape) {
+    #scrollscroll{
+        top:0px;
+        right:100px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #scrollscroll{
+        top:100px;
+        right:0px;
+    }
 }
 </style>
 </body>
 </html>
-
-
