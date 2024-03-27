@@ -9,3 +9,11 @@
  - [The Last Poem](thelastpoem/)
  - [Unfinished Unreleased Singles](unfinishedunreleased/)
  - [fork.html](fork.html)
+
+![qr code](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/qrcode.png)
+![page of qr codes](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/qrcode-page.png)
+
+```
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/copy.sh
+sh copy.sh
+```
