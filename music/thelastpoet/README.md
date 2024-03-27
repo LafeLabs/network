@@ -16,7 +16,7 @@
 
 ## Replication Discography:
 
-Open a linux command line on your network server and type these two commands to replicate the album:
+Open a linux command line on your network server, go to whatever directory you want to put the music in and type these two commands to replicate the album:
 
 ```
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/copythelastpoet.sh
