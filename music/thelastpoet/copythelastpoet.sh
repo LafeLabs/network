@@ -20,6 +20,10 @@ wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommyb
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2011%20X%20%28Prod.%20by%20Hitman%20Hunna%29.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2012%20WAP%20Remix.mp3
 cd ..
+cd trashmagic
+wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/trashmagic/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%20PSX_20201214_192012.jpg
+wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/trashmagic/cover.jpg
+cd ..
 cd ..
 mkdir fuckrap
 cd fuckrap
@@ -31,6 +35,9 @@ wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/fuckrap/mixt
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/fuckrap/mixtape/The%20Last%20Poet%20-%20Fuck%20Rap%20%28I%20Hate%20You%20Niggas%29%20-%2003%20I%20Hate%20You%20Niggas%20HHBM.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/fuckrap/mixtape/The%20Last%20Poet%20-%20Fuck%20Rap%20%28I%20Hate%20You%20Niggas%29%20-%2004%20Pressure.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/fuckrap/mixtape/The%20Last%20Poet%20-%20Fuck%20Rap%20%28I%20Hate%20You%20Niggas%29%20-%2005%20Yuh%20Yuh%20Hip%20Hop%20Baby%20Mix.mp3
+cd ..
+cd trashmagic
+wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/fuckrap/trashmagic/cover.png
 cd ..
 cd ..
 mkdir hiphopbaby
@@ -44,6 +51,9 @@ wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/hiphopbaby/m
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/hiphopbaby/mixtape/The%20Last%20Poet%20-%20Hip%20Hop%20Baby%20-%2004%20Don%27t%20Fuck%20With%20Me.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/hiphopbaby/mixtape/The%20Last%20Poet%20-%20Hip%20Hop%20Baby%20-%2005%20Hip%20Hop%20Baby.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/hiphopbaby/mixtape/beatin%20up%20a%20bitch_mixdown.mp3
+cd ..
+cd trashmagic
+wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/hiphopbaby/trashmagic/cover.png
 cd ..
 cd ..
 mkdir releasedsingles
@@ -70,6 +80,9 @@ wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/thelastpoem/
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/thelastpoem/mixtape/The%20Last%20Poet%20-%20The%20Last%20Poem%20-%2006%20Price%20of%20a%20Life.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/thelastpoem/mixtape/The%20Last%20Poet%20-%20The%20Last%20Poem%20-%2007%20Fuck%2012.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/thelastpoem/mixtape/The%20Last%20Poet%20-%20The%20Last%20Poem%20-%2008%20Hip%20Hop%20Baby%2C%20the%20Classic%20Poem.mp3
+cd ..
+cd trashmagic
+wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/thelastpoem/trashmagic/cover.jpg
 cd ..
 cd ..
 mkdir unfinishedunreleased
