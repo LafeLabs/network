@@ -11,7 +11,7 @@
  - [Operation Olive Branch](https://docs.google.com/spreadsheets/u/0/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit?pli=1)
  - [Free Book Club](https://drive.google.com/drive/folders/1fyo9fQScX5IQYqsEzx3kl4qnY4jbNdSy?usp=drive_link)
 
-# The Last Poet Discography
+# [The Last Poet Discography](https://github.com/LafeLabs/network/tree/main/music/thelastpoet)
 
  - [A Page From My Book](apagefrommybook/)
  - [Fuck Rap (I Hate You Niggas)](fuckrap/)
