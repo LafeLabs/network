@@ -38,11 +38,13 @@ foreach($dna->skins as $value){
     
 }
 
+/*
 foreach($dna->songs as $value){
     
     copy($baseurl."mixtape/".$value,"mixtape/".$value);
     
 }
+*/
 
 
 foreach($dna->php as $value){

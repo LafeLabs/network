@@ -17,7 +17,6 @@
     ],
     "skins": [
         "Blue_Jeans_v13.wsz",
-        "Carrie-Anne Moss.wsz",
         "DOSAmp.wsz",
         "Episode_II_Obi-Wan_Kenobi_3.wsz",
         "Evil_Dead_1_Skin.wsz",
@@ -40,9 +39,5 @@
         "mkdir.txt",
         "replicator.txt",
         "text2php.txt"
-    ],
-    "songs": [
-        "elements_64kb.mp3",
-        "internationale.mp3"
     ]
 }
