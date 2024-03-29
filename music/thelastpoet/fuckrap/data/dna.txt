@@ -36,6 +36,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "makelist.txt",
         "mkdir.txt",
         "replicator.txt",
         "text2php.txt"
