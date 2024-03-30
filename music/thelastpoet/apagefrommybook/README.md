@@ -1,6 +1,19 @@
 # The Last Poet
 
+ - [Ko-Fi Escaping Homelessness](http://ko-fi.com/thelastpoet)
+ - [PayPal](http://paypal.me/roseviolets)
+ - [Venmo](http://venmo.com/apathykathy)
+ - [Cashapp $roseviolets](http://cash.app/roseviolets)
+ - [@thelastpoet on Tiktok](https://www.tiktok.com/@thelastpoet/)
+ - [beacons.ai links](https://beacons.ai/thelastpoet)
+ - [Operation Olive Branch Google Doc](https://docs.google.com/spreadsheets/u/0/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit?pli=1)
+ - [Free Book Club Google Doc](https://drive.google.com/drive/folders/1fyo9fQScX5IQYqsEzx3kl4qnY4jbNdSy?usp=drive_link)
+ 
 # [A Page From My Book](https://github.com/LafeLabs/network/tree/main/music/thelastpoet/apagefrommybook)
+
+![](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/cover.jpg)
+
+![](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%20PSX_20201214_192012.jpg)
 
 ### [localhost/thelastpoet/apagefrommybook/](http://localhost/music/thelastpoet/apagefrommybook/)
 

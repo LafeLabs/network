@@ -6,10 +6,10 @@
  - [PayPal](http://paypal.me/roseviolets)
  - [Venmo](http://venmo.com/apathykathy)
  - [Cashapp $roseviolets](http://cash.app/roseviolets)
- - [Tiktok](https://www.tiktok.com/@thelastpoet/)
+ - [@thelastpoet on Tiktok](https://www.tiktok.com/@thelastpoet/)
  - [beacons.ai links](https://beacons.ai/thelastpoet)
- - [Operation Olive Branch](https://docs.google.com/spreadsheets/u/0/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit?pli=1)
- - [Free Book Club](https://drive.google.com/drive/folders/1fyo9fQScX5IQYqsEzx3kl4qnY4jbNdSy?usp=drive_link)
+ - [Operation Olive Branch Google Doc](https://docs.google.com/spreadsheets/u/0/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit?pli=1)
+ - [Free Book Club Google Doc](https://drive.google.com/drive/folders/1fyo9fQScX5IQYqsEzx3kl4qnY4jbNdSy?usp=drive_link)
 
 # [The Last Poet Discography](https://github.com/LafeLabs/network/tree/main/music/thelastpoet)
 
@@ -35,7 +35,7 @@ sh copythelastpoet.sh
 ```
 Then create a link to "thelastpoet" on the music page and any other pages which should link here.
 
-## [replicator script code](https://github.com/LafeLabs/network/blob/main/music/thelastpoet/copythelastpoet.sh)
+## [copythelastpoet.sh](https://github.com/LafeLabs/network/blob/main/music/thelastpoet/copythelastpoet.sh)
 
 
 ## Self-replicating tracks sets
