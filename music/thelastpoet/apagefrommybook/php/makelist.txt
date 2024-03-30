@@ -10,7 +10,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
 <pre>
 <?php
     
-    $songsfiles = scandir(getcwd()."/mixtape");
+    $songsfiles = scandir(getcwd()."/images");
     $tracks = [];
     
     foreach($songsfiles as $value){

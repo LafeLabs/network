@@ -40,6 +40,8 @@ Then create a link to "thelastpoet" on the music page and any other pages which 
 
 ## Self-replicating tracks sets
 
+
+
 ```
 {
 "baseurl":"https://github.com/LafeLabs/network/blob/main/",
@@ -57,6 +59,11 @@ Then create a link to "thelastpoet" on the music page and any other pages which 
     "The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2011%20X%20%28Prod.%20by%20Hitman%20Hunna%29.mp3",
     "The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2012%20WAP%20Remix.mp3"
 ],
+"music/thelastpoet/apagefrommybook/images/":
+[
+    "The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%20PSX_20201214_192012.jpg",
+    "cover.jpg"
+]
 "music/thelastpoet/fuckrap/tracks/":
 [
     "The%20Last%20Poet%20-%20Fuck%20Rap%20%28I%20Hate%20You%20Niggas%29%20-%2001%20In%20My%20Telfy%20Thong%20Song%20HHBM.mp3",
