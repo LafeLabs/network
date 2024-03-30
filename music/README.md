@@ -3,3 +3,4 @@
 # Music
 
  - [The Last Poet Discography](thelastpoet/)
+ - [Album](album/)
