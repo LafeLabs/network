@@ -14,7 +14,7 @@ $dna = json_decode($dnaraw);
 mkdir("data");
 mkdir("php");
 mkdir("trashmagic");
-mkdir("mixtape");
+mkdir("tracks");
 mkdir("skins");
 
 copy("https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/php/replicator.txt","replicator.php");

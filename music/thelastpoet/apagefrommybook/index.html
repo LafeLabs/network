@@ -83,9 +83,9 @@ USE STICKS TO SPREAD THE MEMES!
 
         <a href = "../">Back up to The Last Poet Discography</a>
         
-        <img src = "trashmagic/cover.jpg"/>    
+        <img src = "images/cover.jpg"/>    
             
-        <img src = "trashmagic/The Last Poet - A Page from My Book - PSX_20201214_192012.jpg"/>    
+        <img src = "images/The Last Poet - A Page from My Book - PSX_20201214_192012.jpg"/>    
 
         <a href = "http://ko-fi.com/thelastpoet">Ko-Fi Escaping Homelessness</a>
         <a href = "http://paypal.me/roseviolets">PayPal roseviolets</a>
@@ -151,7 +151,7 @@ webamp.appendTracks([
 */
 
 
-mixtapefolder = "mixtape";//make this the name of the folder with the songs in it
+mixtapefolder = "tracks";//make this the name of the folder with the songs in it
 
 
 files = [];
@@ -199,21 +199,6 @@ for(var index = 0;index < titles.length;index++){
 
 rainbow(document.getElementsByTagName("A"));
 
-globalurl = window.location.href.split("mixtape.html")[0];
-
-
-//globalurl = "http://192.168.0.176";
-
-codesquaresize = 100;
-
-qrcode = new QRCode(document.getElementById("qrcode"), {
-	text: globalurl,
-	width: codesquaresize,
-	height: codesquaresize,
-	colorDark : "#000000",
-	colorLight : "#ffffff",
-	correctLevel : QRCode.CorrectLevel.H
-});
 
 
 </script>
