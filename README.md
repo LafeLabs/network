@@ -11,6 +11,7 @@
  - [Build a node](node/)
  - [Laws of the Network](laws/)
  - [Tale of the Network](tale/)
+ - [write on the wall](wall.html)
  - [fork.html](fork.html)
 
 
