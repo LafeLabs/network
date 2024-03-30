@@ -10,6 +10,8 @@
         "replicator.sh",
         "trashmagic.css",
         "trashmagic.js",
+        "wall.html",
+        "wall.txt",
         "webdestroyer.html",
         "webeditor.html"
     ],
