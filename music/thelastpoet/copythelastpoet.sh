@@ -6,7 +6,7 @@ mkdir apagefrommybook
 cd apagefrommybook
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/replicator.php
 php replicator.php
-cd mixtape
+cd tracks
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2001%20I%20Gotcha%20%28Prod.%20by%20Yung%20N%27%20Icy%29.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2002%20Check%20It%20%28Prod.%20by%20Penny%20Diamond%29.mp3
 wget https://github.com/LafeLabs/network/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2003%20Future%20Girl%20%28Prod.%20By%20Penny%20Diamond%29.mp3

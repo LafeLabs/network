@@ -10,9 +10,9 @@ dna.txt is a json formatted file which points to all the files in this system, w
 <pre>
 <?php
     
-    $baseurl = "https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/";
+    $baseurl = "https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/tracks/";
 
-    $songsfiles = scandir(getcwd()."/mixtape");
+    $songsfiles = scandir(getcwd()."/tracks");
     
     $copyscript = "";
 

@@ -1,13 +1,3 @@
-# The Last Poet
-
-# [A Page From My Book](https://github.com/LafeLabs/network/tree/main/music/thelastpoet/apagefrommybook)
-
-![qr code]()
-
-![qr code page]()
-
-
-```
 mkdir apagefrommybook
 cd apagefrommybook
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/replicator.php
@@ -30,4 +20,3 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/a
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/cover.jpg
 cd ..
 cd ..
-```

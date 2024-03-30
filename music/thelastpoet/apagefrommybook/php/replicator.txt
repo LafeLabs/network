@@ -13,7 +13,7 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-mkdir("trashmagic");
+mkdir("images");
 mkdir("tracks");
 mkdir("skins");
 

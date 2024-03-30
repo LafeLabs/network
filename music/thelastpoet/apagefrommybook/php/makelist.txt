@@ -9,21 +9,47 @@ dna.txt is a json formatted file which points to all the files in this system, w
 <br/>
 <pre>
 <?php
+    $baseurl = "https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/";
+    $copyscript = "mkdir apagefrommybook\n";
+    $copyscript .= "cd apagefrommybook\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/replicator.php\n";
+    $copyscript .= "php replicator.php\n";
+    $copyscript .= "cd tracks\n";
     
-    $songsfiles = scandir(getcwd()."/images");
-    $tracks = [];
+    $list = json_decode("{}");
     
-    foreach($songsfiles as $value){
+    $tracks = scandir(getcwd()."/tracks");
+    $tracks_array = [];
+    foreach($tracks as $value){
         if($value[0] != "."){
-            array_push($tracks,rawurlencode($value));
+            array_push($tracks_array,rawurlencode($value));
+            $copyscript .= "wget ".$baseurl."tracks/".rawurlencode($value)."\n";
         }
     }
+    $list->tracks = $tracks_array;
     
-    $file = fopen("data/tracks.txt","w");// create new file with this name
-    fwrite($file,json_encode($tracks,JSON_PRETTY_PRINT)); //write data to file
+    $copyscript .= "cd ../images\n";
+    $images = scandir(getcwd()."/images");
+    $images_array = [];
+    foreach($images as $value){
+        if($value[0] != "."){
+            array_push($images_array,rawurlencode($value));
+            $copyscript .= "wget ".$baseurl."images/".rawurlencode($value)."\n";            
+        }
+    }
+    $list->images = $images_array;
+    $copyscript .= "cd ..\n";
+    $copyscript .= "cd ..\n";
+    
+    $file = fopen("data/list.txt","w");// create new file with this name
+    fwrite($file,json_encode($list,JSON_PRETTY_PRINT)); //write data to file
+    fclose($file);  //close file
+    $file = fopen("replicator.sh","w");// create new file with this name
+    fwrite($file,$copyscript); //write data to file
     fclose($file);  //close file
 
-    echo json_encode($tracks,JSON_PRETTY_PRINT);
+    echo $copyscript;
+//    echo json_encode($list,JSON_PRETTY_PRINT);
 
 ?>
 </pre>
