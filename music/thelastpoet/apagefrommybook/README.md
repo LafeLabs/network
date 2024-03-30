@@ -2,9 +2,9 @@
 
 # [A Page From My Book](https://github.com/LafeLabs/network/tree/main/music/thelastpoet/apagefrommybook)
 
-![qr code]()
+![qr code](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/qrcode.png)
 
-![qr code page]()
+![qr code page](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/qrcode-page.png)
 
 
 ```
