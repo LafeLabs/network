@@ -16,9 +16,7 @@
         "webeditor.html"
     ],
     "data": [
-        "copyalbum.txt",
         "dna.txt",
-        "list.txt",
         "tracks.txt"
     ],
     "skins": [
