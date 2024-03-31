@@ -9,7 +9,6 @@
         "readme.html",
         "readmeeditor.html",
         "replicator.sh",
-        "switches.html",
         "wall.html",
         "wall.txt",
         "webdestroyer.html",

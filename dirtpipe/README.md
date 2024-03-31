@@ -1,12 +1,11 @@
 ## [Up A Level](../)
 
-# [Web Page](https://github.com/LafeLabs/network/tree/main/page)
+# [DIRT PIPE](https://github.com/LafeLabs/network/tree/main/dirtpipe)
+
 
 ```
-mkdir mynewpage
-cd mynewpage
-wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php
-php replicator.php
+sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/dirtpipe/replicator.sh -O replicator.sh
+sudo sh replicator.sh
 ```
 
 ![images/qrcode.png](images/qrcode.png)
@@ -14,7 +13,6 @@ php replicator.php
 
  - [editor.php](editor.php)
  - [webeditor.html](webeditor.html)
- - [global replicator code link php/replicator.txt](https://raw.githubusercontent.com/LafeLabs/network/main/page/php/replicator.txt)
  - [localhost](http://localhost)
  - [write on the wall](wall.html)
  - [DIRT WIZARD ON TIKTOK](https://www.tiktok.com/@dirt_wizard666)
