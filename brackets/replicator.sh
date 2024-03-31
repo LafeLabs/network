@@ -5,8 +5,8 @@ php replicator.php
 cd elements
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/arduino-bracket.SLDPRT
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/arduino-bracket.STL
-wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/cable-cleat-1.SLDPRT
-wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/cable-cleat-1.STL
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/cable-cleat.SLDPRT
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/cable-cleat.STL
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/circuit-playground-express-wood-bracket.3mf
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/circuit-playground-express-wood-bracket.SLDDRW
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/circuit-playground-express-wood-bracket.SLDPRT
@@ -28,7 +28,9 @@ cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/arduino-bracket-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/cable-cleat-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/circuit-playground-express-wood-bracket-stl.png
-wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/pi-wood-bracket-stl.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/pi4-wood-bracket-stl.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/qrcode-page.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/qrcode.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/stemma-knob-wood-bracket-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/sunfounder-screen-wood-bracket-stl.png
 cd ..
