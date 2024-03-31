@@ -5,15 +5,11 @@
   - [index.html](index.html)
   - [localhost](http://localhost/)
 
+# Make a New Album
 
-This scroll needs to have the replicator to make a new album from scratch on a new github repository. It also needs to say that this is a self-replicating album. 
-
-go into the music folder, or create it if it doesn't exist, and then go into it.
+After album is created and it has its own replicator script, change the final README to have the replicator for the specific instance.
 
 ```
-mkdir albumname
-sudo chmod -R 0777 *
-cd albumname
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.php
-php replicator.php 
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.sh
+sh replicator.sh
 ```

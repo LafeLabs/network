@@ -42,6 +42,13 @@ dna.txt is a json formatted file which points to all the files in this system, w
     }
     $list->images = $images_array;
     $copyscript .= "cd ..\n";
+    //$copyscript .= "wget ".$baseurl."index.html";
+    //$copyscript .= "wget ".$baseurl."replicator.sh";
+    //$copyscript .= "wget ".$baseurl."README.md";
+
+    //$copyscript .= "wget replicator.sh";
+    //$copyscript .= "wget README.md";
+
     $copyscript .= "cd ..\n";
     
     $file = fopen("replicator.sh","w");// create new file with this name
