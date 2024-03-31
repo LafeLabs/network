@@ -16,3 +16,4 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/r
 php replicator.php
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/README.md -O README.md
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/replicator.sh -O replicator.sh
