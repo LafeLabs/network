@@ -25,14 +25,22 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/s
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/sunfounder-screen-wood-bracket.SLDPRT
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/elements/sunfounder-screen-wood-bracket.STL
 cd ../images
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/3d-printer.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/4-40-screws.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/4-40inserts.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/M2point5-screws.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/M2point5inserts.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/M5-screws.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/arduino-bracket-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/cable-cleat-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/circuit-playground-express-wood-bracket-stl.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/insert-tool.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/pi4-wood-bracket-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/qrcode-page.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/qrcode.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/stemma-knob-wood-bracket-stl.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/sunfounder-screen-wood-bracket-stl.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/images/woodscrews.png
 cd ..
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/index.html -O index.html
 wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/replicator.sh -O replicator.sh
