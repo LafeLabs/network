@@ -2,6 +2,7 @@
 
 # [Web Page](https://github.com/LafeLabs/network/tree/main/page)
 
+![](images/qrcode.png)
 
  - [editor.php](editor.php)
  - [webeditor.html](webeditor.html)

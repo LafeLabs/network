@@ -12,12 +12,12 @@ dna.txt is a json formatted file which points to all the files in this system, w
 
     $baseurl = "https://raw.githubusercontent.com/LafeLabs/network/main/page/";
     
-    $setname = "myalbum";//put your album name here
+    $setname = "mynewset";//put your set name here
     $copyscript = "mkdir ".$setname."\n";
     $copyscript .= "cd ".$setname."\n";
-    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.php\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php\n";
     $copyscript .= "php replicator.php\n";
-    $copyscript .= "cd tracks\n";
+    $copyscript .= "cd elements\n";
     
     $elements = scandir(getcwd()."/elements");
     $elements_array = [];
@@ -38,9 +38,9 @@ dna.txt is a json formatted file which points to all the files in this system, w
         }
     }
     $copyscript .= "cd ..\n";
-    $copyscript .= "wget ".$baseurl."index.html\n";
-    $copyscript .= "wget ".$baseurl."replicator.sh\n";
-    $copyscript .= "wget ".$baseurl."README.md\n";
+    $copyscript .= "wget ".$baseurl."index.html -O index.html\n";
+    $copyscript .= "wget ".$baseurl."replicator.sh -O replicator.sh\n";
+    $copyscript .= "wget ".$baseurl."README.md -O README.md\n";
     $copyscript .= "cd ..\n";
     
     $file = fopen("replicator.sh","w");// create new file with this name
