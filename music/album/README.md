@@ -1,4 +1,6 @@
-# Album
+# [Album](https://github.com/LafeLabs/network/tree/main/music/album)
+
+![](https://raw.githubusercontent.com/LafeLabs/network/main/music/album/images/qrcode.png)
 
   - [index.html](index.html)
   - [localhost](http://localhost/)
@@ -9,6 +11,9 @@ This scroll needs to have the replicator to make a new album from scratch on a n
 go into the music folder, or create it if it doesn't exist, and then go into it.
 
 ```
-
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.sh
+mkdir albumname
+sudo chmod -R 0777 *
+cd albumname
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.php
+php replicator.php 
 ```
