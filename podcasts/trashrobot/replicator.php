@@ -1,10 +1,11 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/music/album/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
 }
+
 
 $baseurl = explode("data/",$dnaurl)[0];
 $dnaraw = file_get_contents($dnaurl);
@@ -12,9 +13,11 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
+mkdir("images");
+mkdir("tracks");
+mkdir("skins");
 
-copy("https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt","replicator.php");
-
+copy("https://raw.githubusercontent.com/LafeLabs/network/main/music/album/php/replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     
@@ -29,7 +32,19 @@ foreach($dna->data as $value){
     
 }
 
+foreach($dna->skins as $value){
+    
+    copy($baseurl."skins/".$value,"skins/".$value);
+    
+}
 
+/*
+foreach($dna->songs as $value){
+    
+    copy($baseurl."mixtape/".$value,"mixtape/".$value);
+    
+}
+*/
 
 foreach($dna->php as $value){
  
@@ -38,22 +53,11 @@ foreach($dna->php as $value){
 
 }
     
-foreach($dna->scrolls as $value){
-    
-    copy($baseurl."scrolls/".$value,"scrolls/".$value);
 
-}
-    
-    
+
 ?>
-<a href = "index.html">CLICK TO GO TO NEW PAGE</a>
+<a href = "index.html">CLICK TO GO TO PAGE</a>
 <style>
-body{
-    background-color:#9f8767;
-    font-family:Comic Sans MS;
-    font-size:3em;
-}
-
 a{
     font-size:3em;
 }

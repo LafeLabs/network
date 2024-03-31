@@ -1,0 +1,13 @@
+mkdir myalbum
+cd myalbum
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.php
+php replicator.php
+cd tracks
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/tracks/elements.mp3
+cd ../images
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/images/qrcode.png
+cd ..
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/README.md
+cd ..

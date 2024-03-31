@@ -1,0 +1,4 @@
+[
+    "The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%20PSX_20201214_192012.jpg",
+    "cover.jpg"
+]
