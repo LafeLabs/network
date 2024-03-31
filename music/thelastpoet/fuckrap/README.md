@@ -13,8 +13,7 @@
  
 # [Fuck Rap](https://github.com/LafeLabs/network/tree/main/music/thelastpoet/fuckrap)
 
-![](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/cover.jpg)
-
+![](https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/cover.png)
 
 Print QR codes and paste them to things to replicate this document, which replicates the replicator of the whole set of documents(songs, music player, images, links.)
 
@@ -31,6 +30,7 @@ sh replicator.sh
 ```
 
 ## [make-replicator-script.php](make-replicator-script.php)
+## [index.html](index.html)
 
 
 
