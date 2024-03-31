@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/music/album/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -13,11 +13,11 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-mkdir("trashmagic");
-mkdir("mixtape");
+mkdir("images");
+mkdir("tracks");
 mkdir("skins");
 
-copy("https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/network/main/music/album/php/replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     
@@ -45,7 +45,6 @@ foreach($dna->songs as $value){
     
 }
 */
-
 
 foreach($dna->php as $value){
  

@@ -8,10 +8,12 @@
  - [Zines](zines/)
  - [Fashion](fashion/)
  - [Freestore](freestore/)
- - [Build a node](node/)
+ - [Build a server](server/)
  - [Laws of the Network](laws/)
  - [Tale of the Network](tale/)
+ - [Circuit Playground Express](circuitplaygroundexpress/)
  - [write on the wall](wall.html)
+ - [QR Code](qrcode.html)
  - [fork.html](fork.html)
 
 

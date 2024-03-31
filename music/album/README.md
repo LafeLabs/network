@@ -3,6 +3,9 @@
 ![](https://raw.githubusercontent.com/LafeLabs/network/main/music/album/images/qrcode.png)
 
   - [index.html](index.html)
+  - [make-replicator-script.php](make-replicator-script.php)
+  - [webeditor.html](webeditor.html)
+  - [editor.php](editor.php)
   - [localhost](http://localhost/)
 
 # Make a New Album

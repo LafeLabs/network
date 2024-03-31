@@ -1,0 +1,12 @@
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2001%20I%20Gotcha%20%28Prod.%20by%20Yung%20N%27%20Icy%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2002%20Check%20It%20%28Prod.%20by%20Penny%20Diamond%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2003%20Future%20Girl%20%28Prod.%20By%20Penny%20Diamond%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2004%20Mama%20Said%20Apply%20Pressure.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2005%20Shaderoom%20%28Prod.%20by%20Penny%20Diamond%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2006%20A%20Smooth%20Slide%20feat.%20Memo%20%28Prod.%20by%20Penny%20Diamond%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2007%20Broke%20Nigga%20Shit%20%28Prod.%20by%20Shree%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2008%20Diary%20Remix.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2009%20Long%20Walk%20Remix.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2010%20Closure%20%28Prod.%20by%20Mickey%20P.%20Boomin%27%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2011%20X%20%28Prod.%20by%20Hitman%20Hunna%29.mp3
+wget https://github.com/LafeLabs/cart/raw/main/music/thelastpoet/apagefrommybook/mixtape/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%2012%20WAP%20Remix.mp3
