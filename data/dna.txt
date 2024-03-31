@@ -4,9 +4,15 @@
         "fork.html",
         "geometron.js",
         "index.html",
+        "qrcode-page.html",
+        "qrcode.html",
         "readme.html",
         "readmeeditor.html",
+        "replicator.sh",
         "switches.html",
+        "wall.html",
+        "wall.txt",
+        "webdestroyer.html",
         "webeditor.html"
     ],
     "data": [

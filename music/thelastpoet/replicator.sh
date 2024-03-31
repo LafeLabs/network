@@ -1,0 +1,15 @@
+mkdir thelastpoet
+cd thelastpoet
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/replicator.sh
+sh replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/replicator.sh
+sh replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/replicator.sh
+sh replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/replicator.sh
+sh replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/replicator.sh
+sh replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/replicator.sh
+sh replicator.sh
+cd ..
