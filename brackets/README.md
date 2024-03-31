@@ -10,17 +10,17 @@ sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/repli
 sudo sh replicator.sh
 ```
 
-[![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.stl)
+[![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.STL)
 
-[![images/cable-cleat-stl.png](images/cable-cleat-stl.png)](elements/cable-cleat.stl)
+[![images/cable-cleat-stl.png](images/cable-cleat-stl.png)](elements/cable-cleat.STL)
 
-[![images/circuit-playground-express-wood-bracket-stl.png](images/circuit-playground-express-wood-bracket-stl.png)](elements/circuit-playground-express-wood-bracket.stl)
+[![images/circuit-playground-express-wood-bracket-stl.png](images/circuit-playground-express-wood-bracket-stl.png)](elements/circuit-playground-express-wood-bracket.STL)
 
-[![images/pi4-wood-bracket-stl.png](images/pi4-wood-bracket-stl.png)](elements/pi4-wood-bracket.stl)
+[![images/pi4-wood-bracket-stl.png](images/pi4-wood-bracket-stl.png)](elements/pi4-wood-bracket.STL)
 
-[![images/stemma-knob-wood-bracket-stl.png](images/stemma-knob-wood-bracket-stl.png)](elements/stemma-knob-wood-bracket.stl)
+[![images/stemma-knob-wood-bracket-stl.png](images/stemma-knob-wood-bracket-stl.png)](elements/stemma-knob-wood-bracket.STL)
 
-[![images/sunfounder-screen-wood-bracket-stl.png](images/sunfounder-screen-wood-bracket-stl.png)](elements/sunfounder-screen-wood-bracket.stl)
+[![images/sunfounder-screen-wood-bracket-stl.png](images/sunfounder-screen-wood-bracket-stl.png)](elements/sunfounder-screen-wood-bracket.STL)
 
 
  - [DIRT WIZARD ON TIKTOK](https://www.tiktok.com/@dirt_wizard666)

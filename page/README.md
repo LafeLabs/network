@@ -2,6 +2,13 @@
 
 # [Web Page](https://github.com/LafeLabs/network/tree/main/page)
 
+```
+mkdir mynewpage
+cd mynewpage
+sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php
+sudo php replicator.php
+```
+
 ![images/qrcode.png](images/qrcode.png)
 ![images/qrcode-page.png](images/qrcode-page.png)
 
