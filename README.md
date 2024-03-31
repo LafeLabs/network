@@ -3,6 +3,7 @@
 *everything replicates!*
 
  - [Music](music/)
+ - [brackets/](brackets/)
  - [Podcasts](podcasts/)
  - [Books](books/)
  - [Zines](zines/)
