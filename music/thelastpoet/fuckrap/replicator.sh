@@ -10,6 +10,8 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/f
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/tracks/The%20Last%20Poet%20-%20Fuck%20Rap%20%28I%20Hate%20You%20Niggas%29%20-%2005%20Yuh%20Yuh%20Hip%20Hop%20Baby%20Mix.mp3
 cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/cover.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/qrcode-page.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/qrcode.png
 cd ..
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/index.html
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/replicator.sh
