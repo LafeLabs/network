@@ -11,7 +11,7 @@ cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/images/qrcode-page.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/images/qrcode.png
 cd ..
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/index.html
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/replicator.sh
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/replicator.sh -O relicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/README.md -O README.md
 cd ..

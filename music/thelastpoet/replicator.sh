@@ -12,4 +12,5 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/t
 sh thelastpoem.sh
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/replicator.sh -O unfinishedunreleased.sh
 sh unfinishedunreleased.sh
-cd ..
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/README.md -O README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/index.html -O index.html

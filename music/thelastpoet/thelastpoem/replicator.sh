@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/t
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/images/qrcode-page.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/images/qrcode.png
 cd ..
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/index.html
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/replicator.sh
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/replicator.sh -O relicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/thelastpoem/README.md -O README.md
 cd ..

@@ -19,4 +19,7 @@ cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/The%20Last%20Poet%20-%20A%20Page%20from%20My%20Book%20-%20PSX_20201214_192012.jpg
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/images/cover.jpg
 cd ..
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/replicator.sh -O replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/apagefrommybook/README.md -O README.md
 cd ..

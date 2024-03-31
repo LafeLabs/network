@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/h
 cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/images/cover.png
 cd ..
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/index.html
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/replicator.sh
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/replicator.sh -O replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/hiphopbaby/README.md -O README.md
 cd ..

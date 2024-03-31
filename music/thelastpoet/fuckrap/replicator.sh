@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/f
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/qrcode-page.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/images/qrcode.png
 cd ..
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/index.html
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/replicator.sh
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/replicator.sh -O replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/fuckrap/README.md -O README.md
 cd ..

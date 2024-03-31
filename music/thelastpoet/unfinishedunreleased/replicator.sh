@@ -12,7 +12,7 @@ cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/images/qrcode-page.png
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/images/qrcode.png
 cd ..
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/index.html
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/replicator.sh
-wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/README.md
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/index.html -O index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/replicator.sh -O replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/unfinishedunreleased/README.md -O README.md
 cd ..
