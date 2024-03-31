@@ -7,13 +7,17 @@
         "qrcode.html",
         "readme.html",
         "readmeeditor.html",
+        "replicator.sh",
         "trashmagic.css",
         "trashmagic.js",
+        "wall.html",
+        "wall.txt",
         "webdestroyer.html",
         "webeditor.html"
     ],
     "data": [
-        "dna.txt"
+        "dna.txt",
+        "tracks.txt"
     ],
     "skins": [
         "Blue_Jeans_v13.wsz",
@@ -36,6 +40,7 @@
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "make-replicator-script.txt",
         "mkdir.txt",
         "replicator.txt",
         "text2php.txt"
