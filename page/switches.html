@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--
+
+
+    -->
+        <title>SWITCHES</title>
+
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+</head>
+<body>
+<img id = "signal1" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal1.png"/>
+<img id = "signal2" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal2.png"/>
+<img id = "signal3" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal3.png"/>
+<img id = "signal4" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal4.png"/>
+<img id = "signal5" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal5.png"/>
+<img id = "signal6" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal6.png"/>
+<img id = "signal7" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal7.png"/>
+<img id = "signal8" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal8.png"/>
+<img id = "signal9" src = "https://raw.githubusercontent.com/LafeLabs/switchotron/main/topology/signal9.png"/>
+
+<script>
+images = document.getElementsByTagName("img");
+for(var index = 0;index < images.length;index++){
+    images[index].style.display = "none";
+}
+
+signalindex = 0;
+images[signalindex].style.display = "block";
+
+function setup() {
+
+}
+
+
+
+function draw(){
+    
+}
+
+function keyPressed() {
+        images[signalindex].style.display = "none";
+
+    if(key == '1'){
+        signalindex = 0;
+    }
+    if(key == '2'){
+        signalindex = 1;
+    }
+    if(key == '3'){
+        signalindex = 2;
+    }
+    if(key == '4'){
+        signalindex = 3;
+    }
+    if(key == '5'){
+        signalindex = 4;
+    }
+    if(key == '6'){
+        signalindex = 5;
+    }
+    if(key == '7'){
+        signalindex = 6;
+    }
+    if(key == '8'){
+        signalindex = 7;
+    }
+    if(key == '9'){
+        signalindex = 8;
+    }
+
+    images[signalindex].style.display = "block";
+
+}
+</script>
+<style>
+body{
+    overflow:hidden;
+    background-color:#9f8767;    
+}
+main{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+</style>
+</body>
+</html>
