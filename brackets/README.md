@@ -6,8 +6,8 @@
 ![images/qrcode-page.png](images/qrcode-page.png)
 
 ```
-wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/replicator.sh -O replicator.sh
-sh replicator.sh
+sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/brackets/replicator.sh -O replicator.sh
+sudo sh replicator.sh
 ```
 
 [![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.stl)
