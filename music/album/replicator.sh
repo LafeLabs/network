@@ -7,4 +7,7 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/tracks/
 cd ../images
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/images/qrcode.png
 cd ..
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/index.html
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/replicator.sh
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/album/README.md
 cd ..
