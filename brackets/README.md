@@ -1,19 +1,30 @@
-# [The Network](https://github.com/LafeLabs/network)
+## [Up A Level](../)
 
-*everything replicates!*
+# [Brackets](https://github.com/LafeLabs/network/tree/main/brackets)
 
- - [Music](music/)
- - [Podcasts](podcasts/)
- - [Books](books/)
- - [Zines](zines/)
- - [Fashion](fashion/)
- - [Freestore](freestore/)
- - [Build a server](server/)
- - [Laws of the Network](laws/)
- - [Tale of the Network](tale/)
- - [Circuit Playground Express](circuitplaygroundexpress/)
+
+
+[![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.stl)
+
+[![images/cable-cleat-stl.png](images/cable-cleat-stl.png)](elements/cable-cleat.stl)
+
+[![images/circuit-playground-express-wood-bracket-stl.png](images/circuit-playground-express-wood-bracket-stl.png)](elements/circuit-playground-express-wood-bracket.stl)
+
+[![images/pi4-wood-bracket-stl.png](images/pi4-wood-bracket-stl.png)](elements/pi4-wood-bracket.stl)
+
+[![images/stemma-knob-wood-bracket-stl.png](images/stemma-knob-wood-bracket-stl.png)](elements/stemma-knob-wood-bracket.stl)
+
+[![images/sunfounder-screen-wood-bracket-stl.png](images/sunfounder-screen-wood-bracket-stl.png)](elements/sunfounder-screen-wood-bracket.stl)
+
+
+ - [editor.php](editor.php)
+ - [webeditor.html](webeditor.html)
+ - [localhost](http://localhost)
  - [write on the wall](wall.html)
- - [page/](page/)
+ - [DIRT WIZARD ON TIKTOK](https://www.tiktok.com/@dirt_wizard666)
+ - [DIRT WIZARD ON CYBERPUNK.LOL](https://cyberpunk.lol/@dirtwizard)
+ - [DIRT WIZARD ON SHARKEY](https://shark.distantserver.org/@dirtwizard)
+ - [DIRT WIZARD ON GITHUB](https://github.com/lafeLabs/)
  - [QR Code](qrcode.html)
  - [fork.html](fork.html)
 
