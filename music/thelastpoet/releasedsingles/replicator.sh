@@ -8,6 +8,8 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/r
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/tracks/The%20Last%20Poet%20-%20New%20York%20Minute.mp3
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/tracks/The%20Last%20Poet%20-%20No%20Features%20%28beat%20by%20Admiral%20Atlas%29.mp3
 cd ../images
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/images/qrcode-page.png
+wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/images/qrcode.png
 cd ..
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/index.html
 wget https://raw.githubusercontent.com/LafeLabs/network/main/music/thelastpoet/releasedsingles/replicator.sh
