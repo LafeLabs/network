@@ -2,6 +2,44 @@
 
 # [DIRT PIPE](https://github.com/LafeLabs/network/tree/main/dirtpipe)
 
+
+[![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.STL)
+
+[Buy shield boards on PCBWay](https://www.pcbway.com/project/shareproject/W224521BSI46_switchotron_uno_shield_v1_gerbers_fd080efe.html)
+
+
+[partially filled digikey cart](https://www.digikey.com/short/w29tmjf5)
+
+## 330 Ohm resistors
+
+[![](images/330ohm.png)](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Resistance-Optional/dp/B07HDFFN81/)
+
+## 10k resistors
+
+[![](images/10kresistors.png)](https://www.amazon.com/Projects-100EP51210K0-10k-Resistors-Pack/dp/B0185FIOTA/)
+
+## 1/2 inch #4 wood screws
+
+[![images/woodscrews.png](images/woodscrews.png)](https://www.amazon.com/gp/product/B0B4SKDPDR/)
+
+## 4-40 Screws for Arduino UNO and Circuit Playground Express
+
+[![4-40 screws](images/4-40-screws.png)](https://www.amazon.com/dp/B07ZHBXG57)
+
+## 4-40 Thread Inserts
+
+[![4-40 inserts](images/4-40inserts.png)](https://www.amazon.com/dp/B0CG4M8HC5)
+
+## Thread insert tool 
+
+[![thread insert tool](images/insert-tool.png)](https://www.amazon.com/dp/B0BBSGG2S2)
+
+## AnkerMake 3d printer
+
+[![AnkerMake 3d printer](images/3d-printer.png)](https://www.amazon.com/dp/B0CT5YMGC9)
+
+
+
 ```
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
@@ -209,7 +247,7 @@ void loop() {
 
   pixels.show();   // Send the updated pixel colors to the hardware.
 
-  aSin.setFreq((buttonmode0+1)*knob*int(pow(2,buttonmode1)));      
+  aSin.setFreq((buttonmode0+1)*knob);      
 
 /*
   if(on){
@@ -248,11 +286,14 @@ audioHook(); // required here
 }
 ```
 
+## DIRT PIPE REPLICATOR CODE:
 
 ```
 sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/dirtpipe/replicator.sh -O replicator.sh
 sudo sh replicator.sh
 ```
+
+## LINKS
 
  - [editor.php](editor.php)
  - [webeditor.html](webeditor.html)

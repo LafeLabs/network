@@ -2,8 +2,7 @@
 
 # [Trash Robot Library](https://github.com/LafeLabs/network/tree/main/books/trashrobot/)
 
-TRASH ROBOT IS NO LONGER TRASH ROBOT, TRASH ROBOT IS NOW DIRT WIZARD. 
-
+ - [Geometron Magic self-replicating e-book](geometronmagic/)
  - [editor.php](editor.php)
  - [webeditor.html](webeditor.html)
  - [localhost](http://localhost)
