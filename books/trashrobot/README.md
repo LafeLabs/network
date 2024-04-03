@@ -2,7 +2,12 @@
 
 # [Trash Robot Library](https://github.com/LafeLabs/network/tree/main/books/trashrobot/)
 
+## Links
+
  - [Geometron Magic self-replicating e-book](geometronmagic/)
+ - [The First Book of Geometron](bookofgeometron/)
+ - [The  Book of Trash](trashbook/)
+ - [The Trash Magic Manifesto and Action Coloring Book](elements/)
  - [editor.php](editor.php)
  - [webeditor.html](webeditor.html)
  - [localhost](http://localhost)
