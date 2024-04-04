@@ -47,7 +47,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/geometronmagic/replicator.php\n";
     $copyscript .= "php replicator.php\n";
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/geometronmagic/data/scrollset.txt -O data/scrollset.txt\n";
-    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "php scrollsetreplicator.php\n";
     $copyscript .= "cd ..\n";
 
     $copyscript .= "mkdir bookofgeometron\n";
@@ -55,7 +55,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/bookofgeometron/replicator.php\n";
     $copyscript .= "php replicator.php\n";
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/bookofgeometron/data/scrollset.txt -O data/scrollset.txt\n";
-    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "php scrollsetreplicator.php\n";
     $copyscript .= "cd ..\n";
 
     $copyscript .= "mkdir trashbook\n";
@@ -63,7 +63,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/trashbook/replicator.php\n";
     $copyscript .= "php replicator.php\n";
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/trashbook/data/scrollset.txt -O data/scrollset.txt\n";
-    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "php scrollsetreplicator.php\n";
     $copyscript .= "cd ..\n";
     $copyscript .= "cd ..\n";
     $copyscript .= "sudo chmod -R 0777 *\n";
