@@ -2,14 +2,14 @@
 
 *everything replicates!*
 
- - [Music](music/)
+ - [Music/](music/)
  - [brackets/](brackets/)
- - [Podcasts](podcasts/)
- - [Books](books/)
- - [Zines](zines/)
- - [Fashion](fashion/)
- - [Freestore](freestore/)
- - [Build a server](server/)
+ - [Podcasts/](podcasts/)
+ - [Books/](books/)
+ - [Zines/](zines/)
+ - [Fashion/](fashion/)
+ - [Freestore/](freestore/)
+ - [Server](server/)
  - [Laws of the Network](laws/)
  - [Tale of the Network](tale/)
  - [Circuit Playground Express](circuitplaygroundexpress/)

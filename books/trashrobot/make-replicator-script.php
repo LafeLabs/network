@@ -12,7 +12,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
 
     $baseurl = "https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/";
     
-    $setname = "mynewset";//put your set name here
+    $setname = "trashrobot";//put your set name here
     $copyscript = "mkdir ".$setname."\n";
     $copyscript .= "cd ".$setname."\n";
     $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php\n";
