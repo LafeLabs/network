@@ -42,6 +42,32 @@ dna.txt is a json formatted file which points to all the files in this system, w
     $copyscript .= "wget ".$baseurl."replicator.sh -O replicator.sh\n";
     $copyscript .= "wget ".$baseurl."README.md -O README.md\n";
     $copyscript .= "cd ..\n";
+
+    $copyscript .= "mkdir geometronmagic\n";
+    $copyscript .= "cd geometronmagic\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/geometronmagic/replicator.php\n";
+    $copyscript .= "php replicator.php\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/geometronmagic/data/scrollset.txt -O data/scrollset.txt\n";
+    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "cd ..\n";
+
+    $copyscript .= "mkdir bookofgeometron\n";
+    $copyscript .= "cd bookofgeometron\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/bookofgeometron/replicator.php\n";
+    $copyscript .= "php replicator.php\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/bookofgeometron/data/scrollset.txt -O data/scrollset.txt\n";
+    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "cd ..\n";
+
+    $copyscript .= "mkdir trashbook\n";
+    $copyscript .= "cd trashbook\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/trashbook/replicator.php\n";
+    $copyscript .= "php replicator.php\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/trashbook/data/scrollset.txt -O data/scrollset.txt\n";
+    $copyscript .= "php scrollsetreplictor.php\n";
+    $copyscript .= "cd ..\n";
+    $copyscript .= "sudo chmod -R 0777 *\n";
+
     
     $file = fopen("replicator.sh","w");// create new file with this name
     fwrite($file,$copyscript); //write data to file

@@ -14,6 +14,7 @@
  - [Tale of the Network](tale/)
  - [Circuit Playground Express](circuitplaygroundexpress/)
  - [DIRT PIPE](dirtpipe/)
+ - [INTERNET OF SQUARES](squares/)
  - [write on the wall](wall.html)
  - [page/](page/)
  - [QR Code](qrcode.html)
