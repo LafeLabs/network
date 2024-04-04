@@ -30,6 +30,11 @@ A SELF-REPLICATING LIBRARY OF SELF-REPLICATING BOOKS!
  - [QR CODE](qrcode.html)
  - [FORK](fork.html)
 
+## REPLICATOR CODE
 
+```
+sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/replicator.sh -O replicator.sh
+sh replicator.sh
+```
 
 

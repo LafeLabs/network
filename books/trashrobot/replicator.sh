@@ -15,7 +15,6 @@ cd ..
 wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/index.html -O index.html
 wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/replicator.sh -O replicator.sh
 wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/README.md -O README.md
-cd ..
 mkdir geometronmagic
 cd geometronmagic
 wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/geometronmagic/replicator.php
@@ -36,5 +35,6 @@ wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/tr
 php replicator.php
 wget https://raw.githubusercontent.com/LafeLabs/network/main/books/trashrobot/trashbook/data/scrollset.txt -O data/scrollset.txt
 php scrollsetreplictor.php
+cd ..
 cd ..
 sudo chmod -R 0777 *
