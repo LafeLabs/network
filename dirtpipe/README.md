@@ -5,7 +5,9 @@
 
 [![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.STL)
 
-[Buy shield boards on PCBWay](https://www.pcbway.com/project/shareproject/W224521BSI46_switchotron_uno_shield_v1_gerbers_fd080efe.html)
+[digikey cart with all the parts other than headers](https://www.digikey.com/short/9bw2nhc5)
+
+[headers on amazon](https://www.amazon.com/Header-Lystaii-Pin-Connector-Electronic/dp/B06ZZN8L9S/)
 
 
 [partially filled digikey cart](https://www.digikey.com/short/w29tmjf5)

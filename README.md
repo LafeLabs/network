@@ -4,6 +4,7 @@
 
  - [Music/](music/)
  - [brackets/](brackets/)
+ - [terminal/](terminal/)
  - [Podcasts/](podcasts/)
  - [Books/](books/)
  - [Zines/](zines/)
