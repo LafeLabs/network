@@ -10,7 +10,6 @@
  - [Zines/](zines/)
  - [Fashion/](fashion/)
  - [Freestore/](freestore/)
- - [Server](server/)
  - [Laws of the Network](laws/)
  - [Tale of the Network](tale/)
  - [Circuit Playground Express](circuitplaygroundexpress/)

@@ -5,12 +5,6 @@
  - gps
  - sd cards
  - sd card reader
- - M4 screws
- - M2.5 screws
- - 4-40 screws
- - screw driver
- - #4 wood screws
- - larger wood screws(?)
  - 4-40 inserts
  - M2.5 inserts
  - pi bracket
@@ -21,6 +15,10 @@
  - 1x4 wood board, 96 inches long
  - keyboard shelf bracket
 
+[![](images/number-4-wood-screws.png)](https://www.amazon.com/gp/product/B0B4SKDPDR/)
+[![](images/M2.5-screws.png)](https://www.amazon.com/gp/product/B012TE3LDM/)
+[![](images/4-40-screws.png)](https://www.amazon.com/gp/product/B0CCY9G41G/)
+[![](images/M4-screws.png)](https://www.amazon.com/gp/product/B07ZPS7SDD/)
 [![](images/pi-amazon.png)](https://www.amazon.com/gp/product/B07TC2BK1X/)
 [![](images/buck-converter.png)](https://www.amazon.com/dp/B01NALDSJ0)
 [![](images/usb-c-power.png)](https://www.amazon.com/gp/product/B0B8V6ZFJH/)
