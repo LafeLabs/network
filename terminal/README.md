@@ -2,6 +2,39 @@
 
 # NETWORK TERMINAL
 
+
+```
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+cd /var/www/html
+sudo rm index.html
+sudo apt install curl
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/network/main/php/replicator.txt
+cd ..
+sudo chmod -R 0777 *
+cd html
+php replicator.php
+sudo chmod -R 0777 *
+sudo apt install rpi-imager
+
+```
+make a link to folder
+
+```
+ln -s /var/www/html/ /home/username/Desktop
+```
+install audacity
+
+```
+sudo apt install snapd
+sudo snap install core
+sudo snap install audacity
+```
+
+
+
+
  - gps
  - sd cards
  - sd card reader

@@ -3,22 +3,15 @@
 # [DIRT PIPE](https://github.com/LafeLabs/network/tree/main/dirtpipe)
 
 
+[link to the circuit boards on pcbway.com](https://www.pcbway.com/project/shareproject/W224521BSI51_dirtpipe_UNO_shield_v1_2024_04_04_8aeaeaa8.html)
+
 [![images/arduino-bracket-stl.png](images/arduino-bracket-stl.png)](elements/arduino-bracket.STL)
 
-[digikey cart with all the parts other than headers](https://www.digikey.com/short/9bw2nhc5)
+[digikey cart with all the parts other than headers](https://www.digikey.com/short/bcr3z21v)
 
 [headers on amazon](https://www.amazon.com/Header-Lystaii-Pin-Connector-Electronic/dp/B06ZZN8L9S/)
 
 
-[partially filled digikey cart](https://www.digikey.com/short/w29tmjf5)
-
-## 330 Ohm resistors
-
-[![](images/330ohm.png)](https://www.amazon.com/EDGELEC-Resistor-Tolerance-Resistance-Optional/dp/B07HDFFN81/)
-
-## 10k resistors
-
-[![](images/10kresistors.png)](https://www.amazon.com/Projects-100EP51210K0-10k-Resistors-Pack/dp/B0185FIOTA/)
 
 ## 1/2 inch #4 wood screws
 
