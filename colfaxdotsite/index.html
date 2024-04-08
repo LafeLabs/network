@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- 
+
+DIRT CUBE!
+
+    -->
+    <title>DIRT CUBE</title>
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREAAAAAAAAREQEREREREBERAREREREQEREBEAAAARAREQEQEREBEBERARAQAQEQEREBEBABARAREQEQEREBEBERARAAAAEQEREBERERERAREQEREREREBERAAAAAAAAEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+<script src="trashmagic.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+   <link rel="stylesheet" href="trashmagic.css">
+
+</head>
+<body>
+<div id = "mainscroll">
+        <div id = "qrcode"></div>
+
+    <h1>COLFAX AVENUE</h1>
+    <H1>TRASH MAGIC WEB</H1>
+    
+    <a href = "wall.html">THE WALL</a>
+    <a href = "music/thelastpoet/">THE LAST POET SELF-REPLICATING DISCOGRAPHY</a>
+    <a href = "books/trashrobot/">TRASH ROBOT BOOKS</a>    
+    <a href = "https://www.tiktok.com/@dirt_wizard666">DIRT WIZARD ON TIKTOK</a>
+    <a href = "https://colfax.site">COLFAX.SITE</a>
+    <a href = "https://quantumart.org">QUANTUMART.ORG</a>
+    <a href = "https://quantumnoise.org">QUANTUMNOISE.ORG</a>
+    <a href = "https:sloanslake.art">SLOANSLAKE.ART</a>
+    <a href = "https://southplatte.net">SOUTHPLATTE.NET</a>
+    <a href = "https://trashrobot.org">TRASHROBOT.ORG</a>
+    
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/cubes.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/pi.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/internet.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/dirtcube.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/cube-cards.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/dandylion0.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/pentagram.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/webpages.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/touchgrass.jpg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/window.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/cardboardside.jpg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/side.svg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/cardboardbottom.jpg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/bottom.svg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/cardboardcorner.jpg"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/qrcode.png"/>
+
+<img src = "https://raw.githubusercontent.com/LafeLabs/DIRTCUBE/main/trashmagic/qrcode-page.png"/>
+
+    
+</div>
+
+<script>
+
+rainbow(document.getElementsByTagName("A"));
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+
+</script>
+<style>
+body{
+    overflow:hidden;
+    background-color:#9f8767;    
+}
+</style>
+</body>
+</html>

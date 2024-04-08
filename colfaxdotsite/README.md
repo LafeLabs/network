@@ -17,7 +17,6 @@ php replicator.php
  - [global replicator code link php/replicator.txt](https://raw.githubusercontent.com/LafeLabs/network/main/page/php/replicator.txt)
  - [localhost](http://localhost)
  - [write on the wall](wall.html)
- - [TRASH MAGIC](trashmagic.html)
  - [DIRT WIZARD ON TIKTOK](https://www.tiktok.com/@dirt_wizard666)
  - [DIRT WIZARD ON CYBERPUNK.LOL](https://cyberpunk.lol/@dirtwizard)
  - [DIRT WIZARD ON SHARKEY](https://shark.distantserver.org/@dirtwizard)

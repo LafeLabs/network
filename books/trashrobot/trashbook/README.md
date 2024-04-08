@@ -1,3 +1,5 @@
+## [UP A LEVEL](../)
+
 # [THE BOOK OF TRASH](https://github.com/LafeLabs/network/tree/main/books/trashrobot/trashbook)
 
 [TRASHBOOK GITHUB REPOSITORY](https://github.com/LafeLabs/trashbook)
