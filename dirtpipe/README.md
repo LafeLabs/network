@@ -2,6 +2,9 @@
 
 # [DIRT PIPE](https://github.com/LafeLabs/network/tree/main/dirtpipe)
 
+![](images/qrcode.png)
+
+![](images/qrcode-page.png)
 
 [link to the circuit boards on pcbway.com](https://www.pcbway.com/project/shareproject/W224521BSI51_dirtpipe_UNO_shield_v1_2024_04_04_8aeaeaa8.html)
 
