@@ -2,24 +2,22 @@
 
 *everything replicates!*
 
- - [Music/](music/)
- - [brackets/](brackets/)
- - [terminal/](terminal/)
- - [Podcasts/](podcasts/)
- - [Books/](books/)
- - [Zines/](zines/)
+ - [MUSIC/](music/)
+ - [BRACKETS/](brackets/)
+ - [TERMINAL/](terminal/)
+ - [PODCASTS/](podcasts/)
+ - [BOOKS/](books/)
+ - [ZINES/](zines/)
  - [Fashion/](fashion/)
  - [Freestore/](freestore/)
- - [Laws of the Network](laws/)
- - [Tale of the Network](tale/)
- - [Circuit Playground Express](circuitplaygroundexpress/)
- - [DIRT PIPE](dirtpipe/)
- - [INTERNET OF SQUARES](squares/)
+ - [Laws of the Network/](laws/)
+ - [DIRT PIPE/](dirtpipe/)
+ - [INTERNET OF SQUARES/](squares/)
  - [write on the wall](wall.html)
  - [page/](page/)
  - [QR Code](qrcode.html)
  - [fork.html](fork.html)
-
+ - [STREET NETWORK/](street/)
 
 
 
