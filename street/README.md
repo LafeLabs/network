@@ -1,5 +1,7 @@
 ## [Up A Level](../)
 
+## [LOCALHOST](http://localhost/)
+
 # [STREET](https://github.com/LafeLabs/network/tree/main/street)
 
 THIS NETWORK IS OLD. BEFORE THE STREETS WERE PATHS. PATHS WERE MADE BEFORE EVEN HUMANS WALKED THE EARTH.  

@@ -18,6 +18,8 @@
  - [QR Code](qrcode.html)
  - [fork.html](fork.html)
  - [STREET NETWORK/](street/)
-
+ - [WATERSHED NETWORK](watershed/)
+ - [WHAT CAN I DO FOR THE NETWORK?/](network-actions/)
+ - [WHAT CAN THE NETWORK DO FOR ME?](network-benefits/)
 
 
