@@ -25,8 +25,9 @@ sudo chmod -R 0777 *
 REPLICATOR URL:
 
 ```
-https://quantumart.org/php/replicator.txt
+https://raw.githubusercontent.com/LafeLabs/network/main/quantumart/php/replicator.txt
 ```
+
 REPLICATOR:
 
 ```
