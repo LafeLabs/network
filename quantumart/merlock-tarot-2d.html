@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    -->
+        <title>MERLOCK TAROT 2D</title>
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREAAAAAAAAREQEREREREBERAREREREQEREBEAAAARAREQEQEREBEBERARAQAQEQEREBEBABARAREQEQEREBEBERARAAAAEQEREBERERERAREQEREREREBERAAAAAAAAEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+<!--geometron javascript library-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+                }
+            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        </script>
+            
+</head>
+<body>
+
+<table id = "displaytable">
+    <tr id = "hifreqrow">
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td><td></td>
+        <td class = "hifreqbox"></td><td>Hz</td>
+    </tr>
+    <tr id = "symbolrow">
+        <td>$\theta_0$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$\phi_0$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$\theta_1$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$\phi_1$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$\theta_2$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$\phi_2$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$C_0$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$C_1$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$C_2$</td><td class = "arrow">&#8593;</td><td></td>
+        <td>$C_3$</td><td class = "arrow">&#8593;</td>
+    </tr>
+    <tr id = "lowfreqrow">
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td><td></td>
+        <td class = "lowfreqbox"></td><td>Hz</td>
+    </tr>
+</table>
+
+    <img class= "card" id = "card0" src= ""/>
+    
+    <img class= "card" id = "card1" src= ""/>
+
+    <img class= "card" id = "card2" src= ""/>
+    
+    <img class= "card" id = "card3" src= ""/>
+
+<script>
+
+n = 10;
+binsize = 4;
+spingain = 0.001;
+
+merlock = [
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot1.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot2.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot3.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot4.jpg",   
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot5.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot6.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot7.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot8.jpg",   
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot9.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot10.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot11.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot12.jpg",   
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot13.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot14.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot15.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot16.jpg",       
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot17.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot18.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot19.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot20.jpg",   
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot21.jpg",
+    "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/merlock/MER_Tarot22.jpg"    
+];
+
+spread= [0,0,0,0];
+
+spread[0] = Math.round(Math.random()*21);
+spread[1] = Math.round(Math.random()*21);
+
+if(spread[1] == spread[0]){
+    spread[1] = Math.round(Math.random()*21);
+}
+spread[2] = Math.round(Math.random()*21);
+spread[3] = Math.round(Math.random()*21);
+
+if(spread[3] == spread[2]){
+    spread[3] = Math.round(Math.random()*21);
+}
+
+
+arrows = document.getElementsByClassName("arrow");
+hifreq = document.getElementsByClassName("hifreqbox");
+lowfreq = document.getElementsByClassName("lowfreqbox");
+
+
+
+document.getElementById("card0").src = merlock[spread[0]];
+document.getElementById("card1").src = merlock[spread[1]];
+document.getElementById("card2").src = merlock[spread[2]];
+document.getElementById("card3").src = merlock[spread[3]];
+
+if(innerWidth > innerHeight){
+    squaresize = innerHeight - 50;
+
+}
+else{
+    squaresize = innerWidth - 50;
+    
+}
+
+
+theta = 0;
+phi = 0;
+x = 0;
+y = 0;
+z = 0;
+xlast =0;
+ylast= 0;
+zlast=0;
+r = squaresize/8;
+bigball = 25;
+littleball = 5;
+let mic, fft;
+svgstring = "";
+
+nsmooth = 10;//number of points to average
+gain = 2.0;//multiply average by this
+
+//squaresize = 500;
+
+angles = [];
+powers = [];
+numangles = 30;
+anglespeed = 0.001;
+for(var index=  0;index< numangles;index++){
+    angles.push(0);
+}
+
+
+function setup() {
+
+  createCanvas(innerWidth, innerHeight);    
+  strokeWeight(2);  
+//  background(159,135,103);
+    mic = new p5.AudioIn();
+  mic.start();
+  fft = new p5.FFT();
+  fft.setInput(mic);
+}
+
+
+
+function draw(){
+
+  frameRate(30); 
+
+   textSize(32);
+   noFill();
+  
+
+  let spectrum = fft.analyze(); 
+  nyquistFreq = sampleRate() / 2;
+  binFreq = nyquistFreq / (spectrum.length);
+  angleIndex = 0;  
+  
+
+  power = 0;
+  for(var index = 0;index < n;index++){
+      for(var subindex = 0;subindex < binsize;subindex++){
+         power += spectrum[(index + 1)*binsize + subindex];
+      }
+      power /= binsize;
+      angles[index] -= spingain*power;
+
+      arrows[index].style.transform = "rotate(" + (-angles[index]).toString() +  "rad)";
+      hifreq[index].innerHTML = (Math.round(binFreq*(binsize*(index + 1) + binsize - 1))).toString();
+      lowfreq[index].innerHTML = (Math.round(binFreq*(binsize*(index + 1)))).toString();
+  
+        H = Math.round(power)*360/255;
+        
+        z = 255*(1 - Math.abs((H/60)%2 - 1));
+        
+        if(H < 60){
+            red = 255;
+            green = Math.round(z);
+            blue = 0;
+        }
+        if(H >= 60 && H < 120){
+            red = Math.round(z);
+            green = 255;
+            blue = 0;
+        }
+        if(H >= 120 && H < 180){
+            red = 0;
+            green = 255;
+            blue = Math.round(z);
+        }
+        if(H >= 180 && H < 240){
+            red = 0;    
+            green = Math.round(z);
+            blue = 255;
+        }
+        if(H >= 240 && H < 300){
+            red = Math.round(z);    
+            green = 0;
+            blue = 255;
+        }
+        if(H >= 300 && H < 360){
+            red = 255;    
+            green = 0;
+            blue = Math.round(z);
+        }
+            
+        redstring = red.toString(16);
+        if(redstring.length < 2){
+            redstring = "0" + redstring;    
+        }
+        greenstring = green.toString(16);
+        if(greenstring.length < 2){
+            greenstring = "0" + greenstring; 
+        }
+        bluestring = blue.toString(16);
+        if(bluestring.length < 2){
+            bluestring = "0" + bluestring; 
+        }
+        color = "#" + redstring + greenstring + bluestring;
+        arrows[index].style.backgroundColor = color; 
+    
+  }
+  
+  
+  
+  if(-angles[6] > 2*Math.PI){
+      spread[0] += 1;
+      if(spread[0] > 21){
+          spread[0] = 0;
+      }
+      angles[6] = 0;
+    document.getElementById("card0").src = merlock[spread[0]];
+    document.getElementById("card1").src = merlock[spread[1]];
+    document.getElementById("card2").src = merlock[spread[2]];
+    document.getElementById("card3").src = merlock[spread[3]];
+      
+  }
+  if(-angles[7] > 2*Math.PI){
+      spread[1] += 1;
+      if(spread[1] > 21){
+          spread[1] = 0;
+      }
+      angles[7] = 0;
+      document.getElementById("card0").src = merlock[spread[0]];
+        document.getElementById("card1").src = merlock[spread[1]];
+        document.getElementById("card2").src = merlock[spread[2]];
+        document.getElementById("card3").src = merlock[spread[3]];
+
+  }
+  if(-angles[8] > 2*Math.PI){
+      spread[2] += 1;
+      if(spread[2] > 21){
+          spread[2] = 0;
+      }
+      angles[8] = 0;
+     document.getElementById("card0").src = merlock[spread[0]];
+    document.getElementById("card1").src = merlock[spread[1]];
+    document.getElementById("card2").src = merlock[spread[2]];
+    document.getElementById("card3").src = merlock[spread[3]];
+ 
+  }
+  if(-angles[9] > 2*Math.PI){
+      spread[3] += 1;
+      if(spread[3] > 21){
+          spread[3] = 0;
+      }
+      angles[9] = 0;
+    document.getElementById("card0").src = merlock[spread[0]];
+    document.getElementById("card1").src = merlock[spread[1]];
+    document.getElementById("card2").src = merlock[spread[2]];
+    document.getElementById("card3").src = merlock[spread[3]];
+
+  }
+
+  noFill();
+  strokeWeight(4);
+  x = 0;
+  y = 0;
+  z = 0;
+  theta = angles[0];
+  phi = angles[1];
+  x += r*Math.cos(phi)*Math.sin(theta);
+  y += r*Math.sin(phi)*Math.sin(theta);
+  z += r*Math.cos(theta);
+
+  theta = angles[2];
+  phi = angles[3];
+  x += r*Math.cos(phi)*Math.sin(theta);
+  y += r*Math.sin(phi)*Math.sin(theta);
+  z += r*Math.cos(theta);
+   
+
+  theta = angles[4];
+  phi = angles[5];
+  x += r*Math.cos(phi)*Math.sin(theta);
+  y += r*Math.sin(phi)*Math.sin(theta);
+  z += r*Math.cos(theta);
+  fill(Math.abs(z));
+  stroke(Math.abs(z));
+    line(0.5*width + xlast,0.5*height -ylast,0.5*width + x,0.5*height -y);
+
+        H = Math.round(spread[0])*360/21;
+        
+        z = 255*(1 - Math.abs((H/60)%2 - 1));
+        
+        if(H < 60){
+            red = 255;
+            green = Math.round(z);
+            blue = 0;
+        }
+        if(H >= 60 && H < 120){
+            red = Math.round(z);
+            green = 255;
+            blue = 0;
+        }
+        if(H >= 120 && H < 180){
+            red = 0;
+            green = 255;
+            blue = Math.round(z);
+        }
+        if(H >= 180 && H < 240){
+            red = 0;    
+            green = Math.round(z);
+            blue = 255;
+        }
+        if(H >= 240 && H < 300){
+            red = Math.round(z);    
+            green = 0;
+            blue = 255;
+        }
+        if(H >= 300 && H < 360){
+            red = 255;    
+            green = 0;
+            blue = Math.round(z);
+        }
+            
+        redstring = red.toString(16);
+        if(redstring.length < 2){
+            redstring = "0" + redstring;    
+        }
+        greenstring = green.toString(16);
+        if(greenstring.length < 2){
+            greenstring = "0" + greenstring; 
+        }
+        bluestring = blue.toString(16);
+        if(bluestring.length < 2){
+            bluestring = "0" + bluestring; 
+        }
+        color = "#" + redstring + greenstring + bluestring;  
+        stroke(color);
+        fill(color);
+        circle(0.5*width + x + 10,0.5*height - y + 10,6,6);
+        line(0.5*width + xlast + 10,0.5*height -ylast + 10,0.5*width + x + 10,0.5*height -y + 10);        
+        H = Math.round(spread[1])*360/21;
+        
+        z = 255*(1 - Math.abs((H/60)%2 - 1));
+        
+        if(H < 60){
+            red = 255;
+            green = Math.round(z);
+            blue = 0;
+        }
+        if(H >= 60 && H < 120){
+            red = Math.round(z);
+            green = 255;
+            blue = 0;
+        }
+        if(H >= 120 && H < 180){
+            red = 0;
+            green = 255;
+            blue = Math.round(z);
+        }
+        if(H >= 180 && H < 240){
+            red = 0;    
+            green = Math.round(z);
+            blue = 255;
+        }
+        if(H >= 240 && H < 300){
+            red = Math.round(z);    
+            green = 0;
+            blue = 255;
+        }
+        if(H >= 300 && H < 360){
+            red = 255;    
+            green = 0;
+            blue = Math.round(z);
+        }
+            
+        redstring = red.toString(16);
+        if(redstring.length < 2){
+            redstring = "0" + redstring;    
+        }
+        greenstring = green.toString(16);
+        if(greenstring.length < 2){
+            greenstring = "0" + greenstring; 
+        }
+        bluestring = blue.toString(16);
+        if(bluestring.length < 2){
+            bluestring = "0" + bluestring; 
+        }
+        color = "#" + redstring + greenstring + bluestring;  
+        stroke(color);
+        fill(color);
+        circle(0.5*width + x + 10,0.5*height - y - 10,6,6);    
+        line(0.5*width + xlast + 10,0.5*height -ylast - 10,0.5*width + x + 10,0.5*height -y - 10);                
+                H = Math.round(spread[2])*360/21;
+        
+        z = 255*(1 - Math.abs((H/60)%2 - 1));
+        
+        if(H < 60){
+            red = 255;
+            green = Math.round(z);
+            blue = 0;
+        }
+        if(H >= 60 && H < 120){
+            red = Math.round(z);
+            green = 255;
+            blue = 0;
+        }
+        if(H >= 120 && H < 180){
+            red = 0;
+            green = 255;
+            blue = Math.round(z);
+        }
+        if(H >= 180 && H < 240){
+            red = 0;    
+            green = Math.round(z);
+            blue = 255;
+        }
+        if(H >= 240 && H < 300){
+            red = Math.round(z);    
+            green = 0;
+            blue = 255;
+        }
+        if(H >= 300 && H < 360){
+            red = 255;    
+            green = 0;
+            blue = Math.round(z);
+        }
+            
+        redstring = red.toString(16);
+        if(redstring.length < 2){
+            redstring = "0" + redstring;    
+        }
+        greenstring = green.toString(16);
+        if(greenstring.length < 2){
+            greenstring = "0" + greenstring; 
+        }
+        bluestring = blue.toString(16);
+        if(bluestring.length < 2){
+            bluestring = "0" + bluestring; 
+        }
+        color = "#" + redstring + greenstring + bluestring;  
+        stroke(color);
+        fill(color);
+        circle(0.5*width + x - 10,0.5*height - y + 10,6,6);
+        line(0.5*width + xlast - 10,0.5*height -ylast + 10,0.5*width + x - 10,0.5*height -y + 10);        
+        
+                H = Math.round(spread[3])*360/21;
+        
+        z = 255*(1 - Math.abs((H/60)%2 - 1));
+        
+        if(H < 60){
+            red = 255;
+            green = Math.round(z);
+            blue = 0;
+        }
+        if(H >= 60 && H < 120){
+            red = Math.round(z);
+            green = 255;
+            blue = 0;
+        }
+        if(H >= 120 && H < 180){
+            red = 0;
+            green = 255;
+            blue = Math.round(z);
+        }
+        if(H >= 180 && H < 240){
+            red = 0;    
+            green = Math.round(z);
+            blue = 255;
+        }
+        if(H >= 240 && H < 300){
+            red = Math.round(z);    
+            green = 0;
+            blue = 255;
+        }
+        if(H >= 300 && H < 360){
+            red = 255;    
+            green = 0;
+            blue = Math.round(z);
+        }
+            
+        redstring = red.toString(16);
+        if(redstring.length < 2){
+            redstring = "0" + redstring;    
+        }
+        greenstring = green.toString(16);
+        if(greenstring.length < 2){
+            greenstring = "0" + greenstring; 
+        }
+        bluestring = blue.toString(16);
+        if(bluestring.length < 2){
+            bluestring = "0" + bluestring; 
+        }
+        color = "#" + redstring + greenstring + bluestring;  
+        stroke(color);
+        fill(color);
+        circle(0.5*width + x - 10,0.5*height - y - 10,6,6);
+        line(0.5*width + xlast - 10,0.5*height -ylast - 10,0.5*width + x - 10,0.5*height - y - 10);        
+  xlast = x;
+  ylast = y;
+  zlast = z;
+  
+  alpha = Math.cos(angles[0]/2)*Math.cos(angles[0]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2)*Math.cos(angles[4]/2)*Math.cos(angles[4]/2);
+  beta = Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.cos(angles[2]/2)*Math.cos(angles[2]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2)*Math.sin(angles[4]/2)*Math.sin(angles[4]/2);
+  gamma = Math.cos(angles[0]/2)*Math.cos(angles[0]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.cos(angles[2]/2)*Math.cos(angles[2]/2);
+  delta = Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2);
+
+
+  document.getElementById("card0").style.opacity = (alpha).toString();
+  document.getElementById("card1").style.opacity = (beta).toString();
+  document.getElementById("card2").style.opacity = (gamma).toString();
+  document.getElementById("card3").style.opacity = (delta).toString();
+
+//  text("BLOCH CHAIN",200,200);
+      
+}
+
+
+
+function mouseClicked() {
+    
+    
+  spread[0] = Math.round(Math.random()*21);
+  spread[1] = Math.round(Math.random()*21);
+
+    if(spread[1] == spread[0]){
+        spread[1] = Math.round(Math.random()*21);
+    }
+    spread[2] = Math.round(Math.random()*21);
+    spread[3] = Math.round(Math.random()*21);
+
+    if(spread[3] == spread[2]){
+        spread[3] = Math.round(Math.random()*21);
+    }
+
+document.getElementById("card0").src = merlock[spread[0]];
+document.getElementById("card1").src = merlock[spread[1]];
+document.getElementById("card2").src = merlock[spread[2]];
+document.getElementById("card3").src = merlock[spread[3]];
+    
+    background(0);
+}
+
+
+
+
+</script>
+<style>
+body{
+    color:#ff2cb4;
+    overflow:hidden;
+    background-color:black;    
+    font-family:Comic Sans MS;
+}
+main{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+p{
+    margin:1em 1em 1em 1em;
+    font-size:1.5em;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+}
+h1,h2,h3{
+    font-family:Comic Sans MS;
+    text-align:center;
+        overflow:scroll;
+
+}
+a{
+    color:blue;
+    font-family:Comic Sans MS;
+    font-size:1.5em;    
+    overflow:scroll;
+}
+
+
+.deletespan{
+    color:red;
+    border:solid;
+    border-color:red;
+    border-radius:0.5em;
+    padding: 1em 1em 1em 1em;
+    cursor:pointer;
+}
+.deletespan:hover{
+    background-color:#ff000080;
+}
+.filelabel{
+    display:none;
+}
+.button{
+    cursor:pointer;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+.data{
+    display:none;
+}
+.card{
+    position:absolute;
+    bottom:20px;
+    max-width:30%;
+}
+#card0{
+    right:20px;
+    z-index:2;
+}
+#card1{
+    right:20px;
+    z-index:3;
+}
+#card2{
+    left:20px;
+    z-index:2;
+}
+#card3{
+    left:20px;
+    z-index:3;
+}
+#displaytable{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:5;
+}
+.arrow{
+    text-align:center;
+}
+.lowfreqbox{
+  text-align:right;
+}
+</style>
+</body>
+</html>

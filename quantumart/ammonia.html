@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    -->
+        <title>AMMONIA</title>
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAZ4efAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREAAAAAAAAREQEREREREBERAREREREQEREBEAAAARAREQEQEREBEBERARAQAQEQEREBEBABARAREQEQEREBEBERARAAAAEQEREBERERERAREQEREREREBERAAAAAAAAEREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+<!--geometron javascript library-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+                }
+            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        </script>
+
+</head>
+<body>
+
+<script>
+
+
+theta = Math.PI/6;
+x = innerWidth/2;
+y = 0;
+z = innerHeight/2;;
+r = innerHeight/8;
+
+nx = 0;
+ny = 0;
+nz = r*Math.sin(theta);
+
+h0x = 0;
+h0y = r;
+h0z = 0;
+
+h1x = r*Math.sqrt(3)/2;
+h1y = -r/2;
+h1z = 0;
+
+h2x = -r*Math.sqrt(3)/2;
+h2y = -r/2;
+h2z = 0;
+
+bigball = 50;
+let mic, fft;
+
+gain = 1.0;//multiply average by this
+
+
+
+function setup() {
+
+  createCanvas(innerWidth,innerHeight,WEBGL);    
+  strokeWeight(2);  
+  background(159,135,103);
+    mic = new p5.AudioIn();
+  mic.start();
+  fft = new p5.FFT();
+  fft.setInput(mic);
+}
+
+
+
+function draw(){
+  
+  r = 0.5*mouseX;
+  bigball = 0.5*mouseY;
+  frameRate(30); 
+  background(159,135,103);
+ 
+   textSize(32);
+   noFill();
+  
+    rotateX(0.8*Math.PI/2);
+
+  let spectrum = fft.analyze(); 
+  
+  power = 0;
+  for(var index = 0;index < spectrum.length;index++){
+    power += spectrum[index];      
+  }
+  power /= spectrum.length;
+  noisepower = gain*power;
+  
+  deltanx = randomGaussian(0,noisepower);
+  deltany = randomGaussian(0,noisepower);
+  deltanz = randomGaussian(0,noisepower);
+  deltah0x = randomGaussian(0,noisepower);
+  deltah0y = randomGaussian(0,noisepower);
+  deltah0z = randomGaussian(0,noisepower);
+  deltah1x = randomGaussian(0,noisepower);
+  deltah1y = randomGaussian(0,noisepower);
+  deltah1z = randomGaussian(0,noisepower);
+  deltah2x = randomGaussian(0,noisepower);
+  deltah2y = randomGaussian(0,noisepower);
+  deltah2z = randomGaussian(0,noisepower);
+  
+  noFill();
+  strokeWeight(8);
+  normalMaterial();
+  translate(nx + deltanx,ny + deltanx,nz + deltanz);
+  sphere(bigball);
+  translate(-nx - deltanx,-ny - deltany,-nz - deltanz);
+  translate(h0x + deltah0x,h0y + deltah0y,h0z + deltah0z);
+  sphere(bigball);
+  translate(-h0x - deltah0x,-h0y - deltah0y,-h0z - deltah0z);
+  translate(h1x + deltah1x,h1y + deltah1y,h1z + deltah1z);
+  sphere(bigball);
+  translate(-h1x - deltah1x,-h1y - deltah1y,-h1z - deltah1z);
+  translate(h2x + deltah2x,h2y + deltah2y,h2z + deltah2z);
+  sphere(bigball);
+
+      
+}
+
+
+
+
+function keyPressed() {
+
+    if(key == 's'){
+
+    }
+
+}
+
+
+</script>
+<style>
+body{
+    overflow:hidden;
+    background-color:#9f8767;    
+}
+main{
+    position:absolute;
+    right:25px;
+    top:25px;
+    border-left:solid;
+    border-width:10px
+}
+
+
+#feedscroll img{
+    max-width:80%;
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    border:solid;
+}
+
+p{
+    margin:1em 1em 1em 1em;
+    font-size:1.5em;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+}
+h1,h2,h3{
+    font-family:Comic Sans MS;
+    text-align:center;
+        overflow:scroll;
+
+}
+a{
+    color:blue;
+    font-family:Comic Sans MS;
+    font-size:1.5em;    
+    overflow:scroll;
+}
+#feedscroll{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    top:6em;
+    z-index:-2;
+    overflow:scroll;
+    background-color:#9f8767;    
+    padding:1em 1em 1em 1em;
+}
+.deletespan{
+    color:red;
+    border:solid;
+    border-color:red;
+    border-radius:0.5em;
+    padding: 1em 1em 1em 1em;
+    cursor:pointer;
+}
+.deletespan:hover{
+    background-color:#ff000080;
+}
+.filelabel{
+    display:none;
+}
+.button{
+    cursor:pointer;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+.data{
+    display:none;
+}
+.qubit{
+    width:200px;
+    position:absolute;
+    top:0px;
+    display:block;
+}
+#qubit0{
+    right:0px;    
+    z-index:2;
+}
+#qubit1{
+    right:0px;    
+    z-index:3;
+    
+}
+#qubit2{
+    right:200px;
+    z-index:2;
+}
+#qubit3{
+    right:200px;
+    z-index:3;
+}
+
+</style>
+</body>
+</html>

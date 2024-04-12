@@ -1,0 +1,11 @@
+[
+    "books",
+    "follow_the_white_rabbit",
+    "geometron",
+    "hypercube",
+    "magic_dump",
+    "skeletron",
+    "trash_magic",
+    "trash_magic_server",
+    "voice_of_the_slime"
+]

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--
+
+        EVERYTHING IS PHYSICAL 
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY 
+        MO MINING 
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    -->
+        <title>THE BLOCH CHAIN</title>
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAC0LP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREREREREREREBERAREQEREQEREBEREBERAREQERERAREBEQABEREQEQEQEBAREREBARAQEBEREBEBEBAQEREBEQEREBEREBERAREQEREBEREBEREREBEREREREREREREREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+<!--geometron javascript library-->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+            MathJax.Hub.Config({
+                tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true,
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+                }
+            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+        </script>
+
+</head>
+<body>
+
+<img class = "qubit" id = "qubit0" src = "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/zero-red.svg"/>
+<img class = "qubit" id = "qubit1" src = "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/one-green.svg"/>
+<img class = "qubit" id = "qubit2" src = "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/zero-blue.svg"/>
+<img class = "qubit" id = "qubit3" src = "https://raw.githubusercontent.com/LafeLabs/quantumnoisedotorg/master/trashmagic/one-purple.svg"/>
+
+<div id = "feedscroll">
+    
+    <h1><a href = "index.html">HOME</a></h1>
+    
+    <h1>2 Qubit Bloch Chain</h1>
+    
+    <p>
+        We normalize and explore the space spanned by 2 qubits, with basis vectors $\left|00\right>$, $\left|01\right>$, $\left|10\right>$, $\left|11\right>$ as follows:
+    </p>
+    
+    <p>
+        $$
+\left|\psi\right> = 
+$$
+$$
+\cos{\left(\frac{\theta_0}{2}\right)}\left|00\right> + 
+$$
+$$
+e^{i\phi_0}\sin{\left(\frac{\theta_0}{2}\right)}\cos{\left(\frac{\theta_1}{2}\right)}\left|01\right> + 
+$$
+$$
+e^{i\phi_1}\sin{\left(\frac{\theta_0}{2}\right)}\sin{\left(\frac{\theta_1}{2}\right)}\cos{\left(\frac{\theta_2}{2}\right)}\left|10\right> + 
+$$
+$$
+e^{i\phi_2}\sin{\left(\frac{\theta_0}{2}\right)}\sin{\left(\frac{\theta_1}{2}\right)}\sin{\left(\frac{\theta_2}{2}\right)}\left|11\right>
+$$
+    </p>
+
+<p>
+    This is represented by a sequence of three($2^2 - 1$) pairs of angles $(\theta_0,\phi_0)$, $(\theta_1,\phi_1)$, and $(\theta_2,\phi_2)$ which rotate a sequence of vectors along which we display spheres. Then angles $\phi_i$ represent complex phases, and the angles $\theta_i$ are a factor of two from the generalized "lattitude" around the surface of a three sphere $\mathbb{S}^3$ embedded in a Euclidean four dimensional space $\mathbb{R}^4$.  The factor of two in lattitude is so that a rotation of $\pi$ radians gets from one eigenstate to the next, and to make it consistent with the 1 qubit Bloch sphere.
+</p>
+
+<p>
+    
+</p>
+
+<p style = "color:red;background-color:black">
+$$
+    \alpha \equiv \left< *0\right> = \left< 00|00\right> + \left< 10|10\right>
+$$    
+</p>
+<p style = "color:green;background-color:black">
+$$
+    \beta \equiv \left< *1\right> = \left< 01|01\right> + \left< 11|11\right>
+$$    
+</p>
+<p style = "color:blue;background-color:black">
+$$
+    \gamma \equiv \left< 0*\right> = \left< 00|00\right> + \left< 01|01\right>
+$$    
+</p>
+<p style = "color:purple;background-color:black">
+$$
+    \delta \equiv \left< 1*\right> = \left< 10|10\right> + \left< 11|11\right>
+$$    
+</p>
+
+<p>These four probabilities are used to determine the opacity of four images, each representing either a one or a zero of either the first or second qubit.</p>
+
+<p>
+    $$
+    \alpha = \cos^2{\left(\frac{\theta_0}{2}\right)} + \sin^2{\left(\frac{\theta_0}{2}\right)}\sin^2{\left(\frac{\theta_1}{2}\right)}\cos^2{\left(\frac{\theta_2}{2}\right)} 
+    $$
+</p>
+<p>
+    $$
+    \beta = \sin^2{\left(\frac{\theta_0}{2}\right)}\cos^2{\left(\frac{\theta_1}{2}\right)} + \sin^2{\left(\frac{\theta_0}{2}\right)}\sin^2{\left(\frac{\theta_1}{2}\right)}\cos^2{\left(\frac{\theta_2}{2}\right)} 
+    $$
+</p>
+<p>
+    $$
+    \gamma = \cos^2{\left(\frac{\theta_0}{2}\right)} + \sin^2{\left(\frac{\theta_0}{2}\right)}\cos^2{\left(\frac{\theta_1}{2}\right)}
+    $$
+</p>
+<p>
+    $$
+    \delta = \sin^2{\left(\frac{\theta_0}{2}\right)}\sin^2{\left(\frac{\theta_1}{2}\right)}
+    $$
+</p>
+
+<p>
+    In a web browser each of these values determins an opacity of a Geometron symbol which represents that state. There are four of these, one for each state of each qubit.  
+</p>
+
+    <h1><a href = "https://en.wikipedia.org/wiki/Felix_Bloch">who was Felix Bloch?</a></h1>
+    
+    <h1><a style = "color:blue;text-align:center;font-family:Comic Sans MS;margin:auto" href = "user.php?scroll=scrolls/blochchain">bloch chain scroll</a></h1>    
+    
+    <h1><a style = "color:blue;text-align:center;font-family:Comic Sans MS;margin:auto" href = "index.html">HOME</a></h1>
+    
+    <h1><a style = "color:blue;text-align:center;font-family:Comic Sans MS;margin:auto" href = "user.php?scroll=scrolls/plotting">plotting scroll</a></h1>
+    
+
+    
+    <p>
+        this page doesn't work on mobile. hit the letter "s" to post a square to the feed. move pointer around on square to change the paramters of the curve.
+    </p>
+    
+    <p>
+
+    </p>
+</div>
+
+<script>
+
+
+
+if(innerWidth > innerHeight){
+    squaresize = innerHeight - 50;
+    document.getElementById("feedscroll").style.right =  squaresize.toString()+ "px";    
+}
+else{
+    squaresize = innerWidth - 50;
+    
+    document.getElementById("feedscroll").style.right =  "0px";    
+    document.getElementById("feedscroll").style.top = squaresize.toString() + "px";
+}
+
+
+theta = 0;
+phi = 0;
+x = 0;
+y = 0;
+z = 0;
+r = squaresize/8;
+bigball = 25;
+littleball = 5;
+let mic, fft;
+svgstring = "";
+
+nsmooth = 10;//number of points to average
+gain = 2.0;//multiply average by this
+
+//squaresize = 500;
+
+angles = [];
+numangles = 30;
+anglespeed = 0.001;
+for(var index=  0;index< numangles;index++){
+    angles.push(0);
+}
+
+
+function setup() {
+
+  createCanvas(squaresize, squaresize,WEBGL);    
+  strokeWeight(2);  
+  background(0);
+    mic = new p5.AudioIn();
+  mic.start();
+  fft = new p5.FFT();
+  fft.setInput(mic);
+}
+
+
+function draw(){
+
+  frameRate(30); 
+  background(0);
+ 
+   textSize(32);
+   noFill();
+  
+    rotateX(Math.PI/2);
+
+  let spectrum = fft.analyze(); 
+  angleIndex = 0;  
+  for (let i = 0; i < spectrum.length; i++) {
+    if(i%nsmooth == 0 && i > 0){
+        avg = 0;
+        for(var index = 0;index < nsmooth;index++){
+            avg += spectrum[i - nsmooth + index + 1];
+        }
+        avg /= nsmooth;
+        avg *= gain;
+        if(angleIndex < angles.length){
+            angles[angleIndex] += avg*anglespeed;
+        }
+        angleIndex++;
+    }
+
+  }
+
+  noFill();
+  strokeWeight(8);
+  normalMaterial();
+  sphere(bigball);
+  theta = angles[0];
+  phi = angles[1];
+  x = 0.1*r*Math.cos(phi)*Math.sin(theta);
+  y = 0.1*r*Math.sin(phi)*Math.sin(theta);
+  z = 0.1*r*Math.cos(theta);
+  for(var index = 0;index < 10;index++){
+    translate(x,y,z);
+    sphere(littleball);      
+  } 
+  translate(x, y, z);
+  sphere(bigball);
+
+  theta = angles[2];
+  phi = angles[3];
+  sphere(bigball);
+  x = 0.1*r*Math.cos(phi)*Math.sin(theta);
+  y = 0.1*r*Math.sin(phi)*Math.sin(theta);
+  z = 0.1*r*Math.cos(theta);
+  for(var index = 0;index < 10;index++){
+    translate(x,y,z);
+    sphere(littleball);      
+  } 
+  translate(x, y, z);
+  sphere(bigball);
+
+  theta = angles[4];
+  phi = angles[5];
+  sphere(bigball);
+  x = 0.1*r*Math.cos(phi)*Math.sin(theta);
+  y = 0.1*r*Math.sin(phi)*Math.sin(theta);
+  z = 0.1*r*Math.cos(theta);
+  for(var index = 0;index < 10;index++){
+    translate(x,y,z);
+    sphere(littleball);      
+  } 
+  translate(x, y, z);
+  sphere(bigball);
+  
+  alpha = Math.cos(angles[0]/2)*Math.cos(angles[0]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2)*Math.cos(angles[4]/2)*Math.cos(angles[4]/2);
+  beta = Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.cos(angles[2]/2)*Math.cos(angles[2]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2)*Math.sin(angles[4]/2)*Math.sin(angles[4]/2);
+  gamma = Math.cos(angles[0]/2)*Math.cos(angles[0]/2) + Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.cos(angles[2]/2)*Math.cos(angles[2]/2);
+  delta = Math.sin(angles[0]/2)*Math.sin(angles[0]/2)*Math.sin(angles[2]/2)*Math.sin(angles[2]/2);
+  document.getElementById("qubit0").style.opacity = (alpha).toString();
+  document.getElementById("qubit1").style.opacity = (beta).toString();
+  document.getElementById("qubit2").style.opacity = (gamma).toString();
+  document.getElementById("qubit3").style.opacity = (delta).toString();
+//  text("BLOCH CHAIN",200,200);
+      
+}
+
+
+
+
+function post(){
+            
+    png64 = document.getElementById("defaultCanvas0").toDataURL("image/png");
+    var timestamp = Math.round((new Date().getTime())/1000).toString();
+    var httpc = new XMLHttpRequest();
+    var url = "pngsave.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(png64.substring(22))+"&filename=trashmagic/square" + timestamp +  "-coth.png");//send text to filesaver.php
+     //location.reload(); 
+     
+    newfilename = "trashmagic/square" + timestamp +  "-coth.png";
+    
+    var newbox = document.createElement("DIV");
+    newbox.classList.add("imagebox");         
+    
+    var deletespan = document.createElement("SPAN");
+    deletespan.innerHTML = "X";
+    deletespan.classList.add("deletespan");
+    deletespan.onclick = function(){
+        //delete the parent div of the image
+        //delete the file
+        var filename = this.parentElement.getElementsByClassName("filelabel")[0].innerHTML; 
+        var httpc = new XMLHttpRequest();
+        var url = "deletefile.php";         
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("filename=trashmagic/" + filename);//send text to deletefile.php
+        this.parentElement.parentElement.removeChild(this.parentElement);
+    }
+    
+    newbox.appendChild(deletespan);
+
+    var newdiv = document.createElement("DIV");
+    newdiv.innerHTML = newfilename;
+    newdiv.className = "filelabel";
+    newbox.appendChild(newdiv);
+
+    var newimg = document.createElement("IMG");
+    newimg.src = png64;
+    newimg.classList.add("uploadimage");
+    newimg.classList.add("button");
+    newbox.appendChild(newimg);    
+
+
+    document.getElementById("feedscroll").insertBefore(newbox,document.getElementById("feedscroll").getElementsByClassName("imagebox")[0]);
+        
+}
+
+function keyPressed() {
+
+    if(key == 's'){
+        post();
+    }
+
+}
+
+
+upuploadImages = [];
+var httpc9 = new XMLHttpRequest();
+    httpc9.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        upuploadImages = JSON.parse(this.responseText);
+        for(var index = upuploadImages.length - 1;index >= 0;index--) {
+            
+            if(upuploadImages[index].includes("-coth")){
+            
+                var newbox = document.createElement("DIV");
+                newbox.classList.add("imagebox");         
+                
+                var deletespan = document.createElement("SPAN");
+                deletespan.innerHTML = "X";
+                deletespan.classList.add("deletespan");
+                deletespan.onclick = function(){
+                    //delete the parent div of the image
+                    //delete the file
+                    var filename = this.parentElement.getElementsByClassName("filelabel")[0].innerHTML; 
+                    var httpc = new XMLHttpRequest();
+                    var url = "deletefile.php";         
+                    httpc.open("POST", url, true);
+                    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                    httpc.send("filename=trashmagic/" + filename);//send text to deletefile.php
+                    this.parentElement.parentElement.removeChild(this.parentElement);
+                }
+                
+                newbox.appendChild(deletespan);
+        
+                var newdiv = document.createElement("DIV");
+                newdiv.innerHTML = upuploadImages[index];
+                newdiv.className = "filelabel";
+                newbox.appendChild(newdiv);
+            
+                
+                document.getElementById("feedscroll").appendChild(newbox);
+                var newimg = document.createElement("IMG");
+                newimg.src = "trashmagic/" + upuploadImages[index];
+                newimg.classList.add("uploadimage");
+                newimg.classList.add("button");
+                newbox.appendChild(newimg);
+                
+            }
+            
+        }
+    }
+};
+httpc9.open("GET", "dir.php?filename=trashmagic", true);
+httpc9.send();
+
+</script>
+<style>
+body{
+    overflow:hidden;
+    background-color:black;
+    color:#ff2cb4;
+}
+main{
+    position:absolute;
+    right:25px;
+    top:25px;
+    border-left:solid;
+    border-width:10px
+}
+
+
+#feedscroll img{
+    max-width:80%;
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    border:solid;
+}
+
+p{
+    margin:1em 1em 1em 1em;
+    font-size:1.5em;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+}
+h1,h2,h3{
+    font-family:Comic Sans MS;
+    text-align:center;
+        overflow:scroll;
+
+}
+a{
+    color:blue;
+    font-family:Comic Sans MS;
+    font-size:1.5em;    
+    overflow:scroll;
+}
+#feedscroll{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    top:6em;
+    z-index:-2;
+    overflow:scroll;
+    padding:1em 1em 1em 1em;
+}
+.deletespan{
+    color:red;
+    border:solid;
+    border-color:red;
+    border-radius:0.5em;
+    padding: 1em 1em 1em 1em;
+    cursor:pointer;
+}
+.deletespan:hover{
+    background-color:#ff000080;
+}
+.filelabel{
+    display:none;
+}
+.button{
+    cursor:pointer;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+.data{
+    display:none;
+}
+.qubit{
+    width:200px;
+    position:absolute;
+    top:0px;
+    display:block;
+}
+#qubit0{
+    right:0px;    
+    z-index:2;
+}
+#qubit1{
+    right:0px;    
+    z-index:3;
+    
+}
+#qubit2{
+    right:200px;
+    z-index:2;
+}
+#qubit3{
+    right:200px;
+    z-index:3;
+}
+
+</style>
+</body>
+</html>
