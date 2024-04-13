@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset = "utf-8">
+   <!--
+
+CODE BY THE DIRT WIZARD!
+
+EVOLVE, REPLICATE, DELETE, REPEAT!
+
+
+EVERYTHING LIVES IN A WEB BROWSER!
+EVERYTHING REPLICATES!
+EVERYTHING IS A FEEDBACK LOOP!
+ 
+
+EGO DEATH:
+    LOOK AT THE INSECTS!
+    LOOK AT THE FUNGI!  
+    LANGUAGE IS HOW THE MIND PARSES REALITY!
+
+   
+   -->
+   <!--Stop Google:-->
+   <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC NETWORK</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>    
+<div id = "mainscroll">
+
+    <div id = "qrcode"></div>
+    
+    
+    <h1>DOOMGAZE!</h1>
+    
+    <a href= "https://open.spotify.com/artist/6Fe1Ibka0LrqQ4GeKn4DuQ">Listen to Megaton Leviathan on SPOTIFY </a>
+    
+    <A href = "https://megatonleviathan.bandcamp.com/album/magick-helmet">MAGIC HELMET!</A>
+
+    <a href= "https://www.tiktok.com/@megatonleviathan">THE DOOMGAZER GENERAL ON TIKTOK!</a>
+
+    <a href = "webeditor.html">EDIT THE HTML IN THIS PAGE!</a>
+    
+    <a href= "https://www.youtube.com/@megatonleviathanofficial">Megaton  Leviathan Official Youtube!</a>
+    
+    <a href= "https://megatonleviathan.com">Official Megaton Leviathan Website</a>
+
+    
+
+<!--
+copy and paste the links to add more links, href is what the link points to and the text goes between <a> </a>
+comments are like this, in purple in the code
+
+-->
+
+</div>
+
+<script>
+
+//any and all header elements are made to have a rainbow of character color: 
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+
+//make all links colored around the rainbow using the TRASH MAJIC javascript library
+
+rainbow(document.getElementsByTagName("A"));
+//googleyeyes(16);//add googley eyes, or comment this out to not add them
+
+
+//make the qr code:
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+    
+</script>
+<style>
+#qrcode img{
+    border:solid;
+    border-color:white;
+    border-width:10px;
+}
+
+</style>
+</body>
+</html>
+
+

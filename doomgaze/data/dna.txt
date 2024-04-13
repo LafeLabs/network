@@ -1,0 +1,37 @@
+{
+    "html": [
+        "README.md",
+        "fork.html",
+        "geometron.js",
+        "index.html",
+        "qrcode-page.html",
+        "qrcode.html",
+        "readme.html",
+        "readmeeditor.html",
+        "replicator.sh",
+        "trashmagic.css",
+        "trashmagic.html",
+        "trashmagic.js",
+        "wall.html",
+        "wall.txt",
+        "webdestroyer.html",
+        "webeditor.html"
+    ],
+    "data": [
+        "dna.txt"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "make-replicator-script.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ]
+}
