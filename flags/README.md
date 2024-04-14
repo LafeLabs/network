@@ -11,3 +11,9 @@
 ![images/delete-flag-squares.png](images/delete-flag-squares.png)
 ![images/sloanslake-flag.png](images/sloanslake-flag.png)
 ![images/trashrobot-flag-wordside.png](images/trashrobot-flag-wordside.png)
+
+
+```
+sudo wget https://raw.githubusercontent.com/LafeLabs/network/main/flags/replicator.sh -O replicator.sh
+sh replicator.sh
+```
