@@ -40,9 +40,9 @@ foreach($dna->php as $value){
 
 }
     
-foreach($dna->scrolls as $value){
+foreach($dna->pages as $value){
     
-    copy($baseurl."scrolls/".$value,"scrolls/".$value);
+    copy($baseurl."pages/".$value,"pages/".$value);
 
 }
     

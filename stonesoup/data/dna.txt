@@ -33,5 +33,10 @@
         "rdelete.txt",
         "replicator.txt",
         "text2php.txt"
+    ],
+    "pages": [
+        "bard.txt",
+        "operator.txt",
+        "wizard.txt"
     ]
 }

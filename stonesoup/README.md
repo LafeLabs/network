@@ -2,12 +2,35 @@
 
 # [Web Page](https://github.com/LafeLabs/network/tree/main/page)
 
+
 ```
 mkdir mynewpage
 cd mynewpage
-wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php
+wget https://raw.githubusercontent.com/LafeLabs/network/main/stonesoup/replicator.php
 php replicator.php
 ```
+
+## [stone soup tale tiktok](https://www.tiktok.com/@the..reverends/video/7355983932627668267)
+
+ - bard
+ - wizard
+ - witch
+ - hacker
+ - driver
+ - cook
+ - wood crafter
+ - clothes maker
+ - mechanic
+ - operator
+ - fighter
+ - chaotician
+ - warlock
+ - soothsayer
+ - healer
+ - dragon
+ - wompa
+
+
 
 ![images/qrcode.png](images/qrcode.png)
 ![images/qrcode-page.png](images/qrcode-page.png)
