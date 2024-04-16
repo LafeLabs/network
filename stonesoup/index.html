@@ -5,6 +5,18 @@
 
     <!--
 
+NO MONEY
+NO MINING
+NO PROPERTY
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS RECURSIVE
+EVERYTHING IS FRACTAL
+
+LOOK AT THE INSECTS
+LOOK AT THE FUNGI
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
 
 
     -->
@@ -13,9 +25,15 @@
 
     <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src = "geometron.js"></script>
+        
 </head>
 <body>    
-
+        <div id = "qrcode"></div>
+        
+    <a href = "https://github.com/LafeLabs/network/tree/main/stonesoup/"><canvas id = "chaosmagicicon"></canvas></a>
+    
 <div id = "pagelinkscroll">
     <h1 id = "pagestitle">STONE SOUP</h1>
 </div>
@@ -23,6 +41,21 @@
 <textarea id = "page"></textarea>
 
 <script>
+
+codesquaresize = 120;
+marginsize = 20;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
 currentFile = "elements/wizard.txt";
 var httpc2 = new XMLHttpRequest();
 httpc2.onreadystatechange = function() {
@@ -34,6 +67,9 @@ httpc2.onreadystatechange = function() {
 httpc2.open("GET", "fileloader.php?filename=" + currentFile, true);
 httpc2.send();
 
+document.getElementById("pagename").innerHTML = "wizard";
+
+rainbowstring(document.getElementById("pagename"));
 
 pages = [];
 var httpc = new XMLHttpRequest();
@@ -48,6 +84,9 @@ httpc.onreadystatechange = function() {
                 newpagelink.innerHTML =  pages[index].substring(0,pages[index].length-4);
                 document.getElementById("pagelinkscroll").appendChild(newpagelink);
                 newpagelink.onclick = function(){
+                    document.getElementById("pagename").innerHTML = this.innerHTML;
+                    rainbowstring(document.getElementById("pagename"));
+
                     currentFile = "elements/" + this.innerHTML + ".txt";
 //                    console.log(currentFile);
                     //use php script to load current file;
@@ -206,17 +245,27 @@ function rainbow(localarray){
     }
 }
 
+chaosmagicicon = "0506,0506,0506,0506,0506,0506,0506,0506,0506,0500,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0500,0500,0502,0502,0505,0502,0502,0505,0502,0502,0505,0502,0502,0505,0507,0503,0503,0505,0503,0503,0505,0503,0503,0503,0500,0500,0503,0503,0503,0503,0503,0503,0503,0503,0503,0503,0503,0501,0507,0501,0501,0507,0501,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0504,0502,0504,0502,0501,0501,0506,0501,0501,0506,0501,0501,0506,0501,0501,0507,0500,0503,0504,0503,0503,0504,0503,0503,0503,0503,0504,0502,0504,0502,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0503,0505,0503,0503,0505,0503,0503,0501,0501,0501,0501,0501,0501,0501,0501,0501,0501,0501,0502,0502,0501,0501,0507,0501,0501,0507,0501,0501,0507,0501,0501,0507,0504,0500,0500,0507,0500,0500,0507,0500,0500,0500,0502,0502,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0503,0504,0503,0503,0504,0503,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0502,0505,0502,0503,0503,0505,0503,0503,0505,0503,0503,0505,0503,0503,0504,0502,0500,0506,0500,0500,0506,0500,0500,0500,0504,0502,0505,0502,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0500,0507,0500,0500,0507,0500,0500,0503,0503,0503,0503,0503,0503,0503,0503,0503,0503,0503,0501,0501,0503,0503,0504,0503,0503,0504,0503,0503,0504,0503,0503,0506,0506,0500,0502,0504,0502,0502,0504,0502,0502,0502,0501,0501,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0502,0500,0500,0506,0500,0500,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0500,0507,0501,0507,0501,0500,0500,0507,0500,0500,0507,0500,0500,0507,0500,0500,0505,0502,0502,0505,0502,0502,0502,0505,0502,0502,0502,0501,0507,0501,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0506,0501,0502,0504,0502,0502,0502,0504,0502,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0500,0503,0503,0500,0500,0506,0500,0500,0506,0500,0500,0506,0500,0500,0505,0505,0502,0501,0505,0502,0501,0505,0502,0501,0501,0503,0503,0501,0501,0501,0501,0501,0501,0501,0501,0501,0501,0501,0505,0502,0502,0502,0505,0502,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0504,0502,0507,0500,0500,0502,0502,0504,0502,0502,0504,0502,0502,0504,0502,0505,0505,0503,0501,0507,0501,0501,0507,0501,0501,0507,0501,0500,0507,0500,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0505,0503,0501,0506,0501,0501,0505,0502,0507,0507,0507,0507,0507,0507,0507,0507,0507,0505,0505,";
+
+iconsize = 200;
+var newGVM = new GVM(document.getElementById("chaosmagicicon"),iconsize,iconsize);
+newGVM.style.color0 = "#ff2cb4";
+newGVM.importbytecode(hypercube);
+newGVM.drawGlyph(chaosmagicicon);  
+
 </script>
 <style>
 body{
     overflow:hidden;
-    background-color:black;
+        background-color:#202020;
 }
 #qrcode{
     position:absolute;
     left:5px;
     top:5px;
-    
+    border:solid;
+    border-width:10px;
+    border-color:white;
 }
 #page{
     position:absolute;
@@ -234,7 +283,7 @@ body{
     border-color:#808080;
     border-width:10px;
     position:absolute;
-    background-color:#202020;
+    background-color:#404040;
     left:1em;
     right:55%;
     top:25%;
@@ -264,11 +313,17 @@ h1{
 }
 #pagename{
     position:absolute;
-    right:0px;
-    top:0px;
-    font-size:2em;
+    right:0.5em;
+    top:0.5em;
+    font-size:4em;
     font-family:Comic Sans MS;
 }
+#chaosmagicicon{
+    position:absolute;
+    top:0px;
+    left:47%;
+}
+
 @media only screen and (orientation: landscape) {
 
     
