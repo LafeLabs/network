@@ -1,6 +1,7 @@
 ## [Up A Level](../)
 
-# [Web Page](https://github.com/LafeLabs/network/tree/main/page)
+
+# [STONE SOUP](https://github.com/LafeLabs/network/tree/main/stonesoup)
 
 
 ```

@@ -36,7 +36,14 @@
     ],
     "pages": [
         "bard.txt",
+        "carpenter.txt",
+        "cook.txt",
+        "driver.txt",
+        "hacker.txt",
+        "healer.txt",
+        "mechanic.txt",
         "operator.txt",
+        "witch.txt",
         "wizard.txt"
     ]
 }
