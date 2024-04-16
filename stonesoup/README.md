@@ -32,6 +32,13 @@ php replicator.php
  - wompa
 
 
+replicator link:
+
+```
+https://raw.githubusercontent.com/LafeLabs/network/main/stonesoup/php/replicator.txt
+```
+
+
 
 ![images/qrcode.png](images/qrcode.png)
 ![images/qrcode-page.png](images/qrcode-page.png)
