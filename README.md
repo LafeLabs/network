@@ -3,6 +3,7 @@
 *everything replicates!*
 
  - [MUSIC/](music/)
+ - [STONE SOUP/](stonesoup/)
  - [BRACKETS/](brackets/)
  - [TERMINAL/](terminal/)
  - [PODCASTS/](podcasts/)

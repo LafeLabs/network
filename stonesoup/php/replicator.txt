@@ -42,7 +42,7 @@ foreach($dna->php as $value){
     
 foreach($dna->pages as $value){
     
-    copy($baseurl."pages/".$value,"pages/".$value);
+    copy($baseurl."elements/".$value,"elements/".$value);
 
 }
     

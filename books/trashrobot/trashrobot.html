@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset = "utf-8">
+   <!--
+   
+   EVERYTHING IS PHYSICAL
+   EVERYTHING IS FRACTAL
+   EVERYTHING IS RECURSIVE
+   NO MONEY
+   NO MINING
+   NO PROPERTY
+   LOOK AT THE INSECTS
+   LOOK AT THE FUNGI
+   LANGUAGE IS HOW THE MIND PARSES REALITY
+   
+   -->
+   <!--Stop Google:-->
+   <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC NETWORK</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>    
+<div id = "mainscroll">
+
+    <div id = "qrcode"></div>
+    
+    <h1 id = "pagename"></h1>
+    
+    <h1>TRASH ROBOT BOOKS</h1>
+    
+    <a href = "https://www.lulu.com/shop/lafe-spietz/trash-magic-manifesto-and-action-coloring-book/paperback/product-1km4deev.html">BUY HARDCOPY OF TRASH MAGIC MANIFESTO</a>
+    <a href = "https://www.lulu.com/en/us/shop/lafe-spietz/geometron/paperback/product-qqk98g.html">BUY HARD COPY OF FIRST BOOK OF GEOMETRON</a>
+    <a href = "https://www.lulu.com/en/us/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html">BUY HARDCOPY OF GEOMETRON MAGIC</a>
+    <a href = "elements/Trash_Magic_Manifesto.pdf">FREE PDF OF TRASH MAGIC MANIFESTO</a>
+    <a href = "elements/first-book-of-geometron-lettersize.pdf">FREE PDF OF FIRST BOOK OF GEOMETRON</a>
+    <a href = "elements/main-large-geometron-magic.pdf">FREE PDF OF GEOMETRON MAGIC</a>
+    <a href = "bookofgeometron/">FREE FIRST BOOK OF GEOMETRON EBOOK</a>
+    <a href = "geometronmagic/">FREE GEOMETRON MAGIC EBOOK</a>
+    <a href = "trashbook/">THIS BOOK EATS TRASH!</a>
+    <a href = "https://github.com/lafeLabs/">DIRT WIZARD ON GITHUB</a>
+    <a href = "https://cyberpunk.lol/@dirtwizard">DIRT WIZARD ON CYBERPUNK.LOL</a>
+    <a href = "https://www.tiktok.com/@dirt_wizard666">DIRT WIZARD ON TIKTOK</a>
+
+
+    <A href="http://colfax.site/squares.html">VIRTUAL CARDBOARD PILE!</A>
+    <a href = "https://colfax.site/books/trashrobot/">TRASH ROBOT LIBRARY!</a>
+    <A href="https://youtu.be/0SN5tAHvccg">BUILD A BIKE TRAILER FROM TRASH!</A>
+    <A href= "dirtwizard/">DIRT WIZARD'S INVENTION FARM!</A>
+    <A href="https://hydroponictrash.solar/">HYDROPONIC TRASH!</A>
+    <A href= "http://nettlez.net"> DANGER DEADNETTLEZ DOEZ ICON MAGIC!</A>
+    <A href="https://releaf.site/">THE RELEAF ORGANIC MEDIA COLLECTIONS AND BOTANICAL GARDENS</A>
+      <A href="http://ffbus.org/">FLATIRON FLYER BUS</A>
+    <A href="https://westmeadows.art/">WIZARDS OF THE GREENWAY!</A>
+        <A href="https://mississippiriver.xyz/parisite/user.php?scroll=scrolls/pigeonracingleauge">PARISITE PIGEON RACING LEAGUE</A>
+    
+
+</div>
+<script>
+
+pagename = window.location.href.split("://")[1];
+pagename = pagename.replace(/index.html/g, ""); 
+
+document.getElementById("pagename").innerHTML = pagename;
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+
+rainbow(document.getElementsByTagName("A"));
+//googleyeyes(16);
+
+codesquaresize = 170;
+marginsize = 40;
+fontsize = 12;
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+    
+</script>
+<style>
+#qrcode img{
+    border:solid;
+    border-color:white;
+    border-width:10px;
+}
+
+</style>
+</body>
+</html>
+
+
+
+
+
+
