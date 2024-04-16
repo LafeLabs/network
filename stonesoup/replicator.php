@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/page/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/network/main/stonesoup/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -15,7 +15,7 @@ mkdir("php");
 mkdir("elements");
 mkdir("images");
 
-copy("https://raw.githubusercontent.com/LafeLabs/network/main/page/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/network/main/stonesoup/php/replicator.txt","replicator.php");
 
 
 foreach($dna->html as $value){
@@ -40,9 +40,9 @@ foreach($dna->php as $value){
 
 }
     
-foreach($dna->scrolls as $value){
+foreach($dna->pages as $value){
     
-    copy($baseurl."scrolls/".$value,"scrolls/".$value);
+    copy($baseurl."pages/".$value,"pages/".$value);
 
 }
     
