@@ -38,12 +38,17 @@
     "pages": [
         "bard.txt",
         "carpenter.txt",
-        "driver.txt",
+        "cooks.txt",
+        "dispatchers.txt",
+        "drivers.txt",
+        "farmers.txt",
         "hacker.txt",
         "healer.txt",
         "mathematician.txt",
         "mechanic.txt",
+        "needaride.txt",
         "operator.txt",
+        "shoppers.txt",
         "witch.txt",
         "wizard.txt"
     ]
