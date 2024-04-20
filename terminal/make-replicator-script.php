@@ -10,12 +10,12 @@ dna.txt is a json formatted file which points to all the files in this system, w
 <pre>
 <?php
 
-    $baseurl = "https://raw.githubusercontent.com/LafeLabs/network/main/page/";
+    $baseurl = "https://raw.githubusercontent.com/LafeLabs/network/main/terminal/";
     
     $setname = "mynewset";//put your set name here
     $copyscript = "mkdir ".$setname."\n";
     $copyscript .= "cd ".$setname."\n";
-    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/page/replicator.php\n";
+    $copyscript .= "wget https://raw.githubusercontent.com/LafeLabs/network/main/terminal/replicator.php\n";
     $copyscript .= "php replicator.php\n";
     $copyscript .= "cd elements\n";
     

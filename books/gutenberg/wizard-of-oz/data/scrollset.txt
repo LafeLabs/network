@@ -1,0 +1,6 @@
+{
+    "server": "https://raw.githubusercontent.com/LafeLabs/trashbook/main/gutenberg/fiction/wizard-of-oz/",
+    "scrolls": [
+        "home"
+    ]
+}
