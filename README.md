@@ -1,5 +1,8 @@
 # [The Network](https://github.com/LafeLabs/network)
 
+![](images/qrcode.png)
+![](images/qrcode-page.png)
+
 *everything replicates!*
 
  - [MUSIC/](music/)
