@@ -10,6 +10,8 @@
         "readmeeditor.html",
         "replicator.sh",
         "switches.html",
+        "trashmagic.css",
+        "trashmagic.js",
         "wall.html",
         "wall.txt",
         "webdestroyer.html",
