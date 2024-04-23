@@ -5,6 +5,7 @@
 
 *everything replicates!*
 
+ - [index.html](index.html)
  - [MUSIC/](music/)
  - [STONE SOUP/](stonesoup/)
  - [BRACKETS/](brackets/)
@@ -38,4 +39,16 @@
 8. drill all the holes in all the boards
 9. assemble all the screws
 
+
+[![](images/M2.5screw.png)](https://www.homedepot.com/p/Prime-Line-M2-5-0-45-x-8-mm-Metric-Zinc-Plated-Steel-Phillips-Drive-Pan-Head-Machine-Screws-25-Pack-9130839/311229788)
+
+[![images/pi4-wood-bracket-stl.png](images/pi4-wood-bracket-stl.png)](elements/pi4-wood-bracket.STL)
+
+[![](images/pi.png)](https://www.pishop.us/product/raspberry-pi-4-model-b-4gb/)
+
+[![](images/screen.png)](https://www.sunfounder.com/collections/displays-touchscreens-for-raspberry-pi/products/13inch-portable-gaming-monitor)
+
+[![](images/jackery.png)](https://www.jackery.com/products/explorer-300-portable-power-station)
+
+[![](images/solar-panel.png)](https://luvknit.com/products/luvknit-portable-solar-panel-100w-for-camping-hiking-off-grid-living-5v-usb-18v-dc-output)
 
