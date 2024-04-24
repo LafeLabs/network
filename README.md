@@ -59,8 +59,19 @@
 
 [![](images/jackery.png)](https://www.jackery.com/products/explorer-300-portable-power-station)
 
+[![images/sunfounder-screen-wood-bracket-stl.png](images/sunfounder-screen-wood-bracket-stl.png)](elements/sunfounder-screen-wood-bracket.STL)
+
+[![images/1x4-bracket.png](images/1x4-bracket.png)](elements/1x4-bracket.STL)
+
+
 [![](images/solar-panel.png)](https://luvknit.com/products/luvknit-portable-solar-panel-100w-for-camping-hiking-off-grid-living-5v-usb-18v-dc-output)
 
 [![](images/1x4.png)](https://www.acehardware.com/departments/building-supplies/lumber-and-trim/lumber/5072426)
 
+[![](images/flat-bracket.png)](elements/flat-bracket.STL)
+
+
+
+
+[![](images/2x4.png)](https://www.mcmaster.com/3577N134-3577N111/)
 
