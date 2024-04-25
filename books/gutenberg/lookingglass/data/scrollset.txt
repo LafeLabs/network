@@ -1,6 +1,19 @@
 {
     "server": "https://raw.githubusercontent.com/LafeLabs/pi/main/library/lookingglass/",
     "scrolls": [
-        "home"
+        "home",
+        "i",
+        "ii",
+        "iii",
+        "iv",
+        "ix",
+        "replicator",
+        "v",
+        "vi",
+        "vii",
+        "viii",
+        "x",
+        "xi",
+        "xii"
     ]
 }
